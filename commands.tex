@@ -1,10 +1,151 @@
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}            
+
 \renewcommand{\baselinestretch}{1.5}
 \setlength{\arrayrulewidth}{0,5mm}
+
 \renewcommand{\arraystretch}{1.5}
+
 \newcommand*\mytitle[1]{
 \begin{center}
     \begin{Large}
         \textsc{#1}
     \end{Large}
 \end{center}}
+
+\newcommand{\mc}[1]{\begin{multicols}{2}#1\end{multicols}}
+
+\newcommand{\enu}[1]{\begin{enumerate}[label=(\alph*)]#1\end{enumerate}}
+
+\newcommand{\itmz}[1]{\begin{itemize}[label=\textbullet]#1\end{itemize}}
+
+\newcommand{\cntr}[1]{\begin{center}#1\end{center}}
+
+\newcommand{\dtf}{\makebox[\linewidth]{\dotfill}}
+
+\newcommand{\exercice}{\section{}}
+
+\newcommand{\mkb}[2]{\makebox[#1]{#2}}
+
+\newcommand{\mybox}[1]{\begin{tabular}{|l|}
+\hline
+#1 \\
+\hline
+\end{tabular}}
+
+\newcommand{\mkbdtf}[1]{\makebox[#1cm]{\dotfill}}
+
+\newcommand{\mkblw}[1]{\makebox[\linewidth]{#1}}
+
+\newcommand{\myrule}[1]{\rule[2mm]{#1cm}{.1pt}}
+
+\newcommand{\myfigure}[1]{\begin{Figure}
+\centering
+\includegraphics[width=\linewidth]{images/#1}
+\end{Figure}}
+
+\newcommand{\titre}[2]{\cntr{
+\begin{LARGE}
+\myrule{#2} \textsc{#1} \myrule{#2}
+\end{LARGE}}}
+
+\newcommand{\colonnesep}[1]{\setlength{\columnseprule}{#1pt}}
+
+\newcommand{\myfig}[2]{\begin{Figure}
+\centering
+\includegraphics[width=#1]{images/#2}
+\end{Figure}}
+
+\newcommand{\tabline}{\\ \hline}
+
+\newcommand{\tableau}[2]{\begin{tabular}{|*{#1}{c|}} \hline #2  \end{tabular}}
+
+\newcommand{\degre}{\ensuremath{^\circ}}
+
+\newcommand{\phm}{\phantom{0}}
+
+\newcommand{\encart}[1]{\framebox[\linewidth]{\rule{0pt}{#1}}}
+
+\newcommand{\nom}{
+\textsc{Nom :} \dotfill \\
+Prénom : \dotfill \\
+Classe : \dotfill}
+
+\newcommand{\diff}[1][99]{ ~~ \ifnum#1=1 $\bigstar\largestar\largestar\largestar$ \else\ifnum#1=2 $ \bigstar\bigstar\largestar\largestar$ \else\ifnum#1=3 $\bigstar\bigstar\bigstar\largestar$ \else\ifnum#1=4  $\bigstar\bigstar\bigstar\bigstar$ \else\ifnum#1>4 \ldots \fi\fi\fi\fi\fi\ }
+
+\newcommand{\calculmental}{
+\textbf{Écrire \underline{uniquement les résultats} des calculs affichés au tableau.}
+
+\begin{multicols}{2}
+\begin{center}
+\begin{enumerate}[label=\protect\circled{\arabic*}]
+	\item \makebox[4cm]{\dotfill}
+	\item \makebox[4cm]{\dotfill}
+	\item \makebox[4cm]{\dotfill}
+	\item \makebox[4cm]{\dotfill}
+	\item \makebox[4cm]{\dotfill}
+	\item \makebox[4cm]{\dotfill}
+	\item \makebox[4cm]{\dotfill}
+	\item \makebox[4cm]{\dotfill}
+	\item \makebox[4cm]{\dotfill}
+	\item \makebox[4cm]{\dotfill}
+\end{enumerate}
+\end{center}
+\end{multicols}}
+
+\newcommand{\appreciationnote}[1]{\cntr{
+\begin{tabular}{|c|c|}
+\hline
+\phantom{0000000000000000000000}\textbf{Appréciation}\phantom{0000000000000000000000}&\qquad\qquad\textbf{Note}\qquad\qquad\qquad \\
+\hline
+& \\
+& \resizebox{3cm}{!}{ \ldots/#1 }\\
+&\\ \hline
+\end{tabular} }
+}
+
+\newcommand{\mcs}[2]{\begin{multicols}{#1}#2\end{multicols}}
+
+\newcommand{\bareme}[1]{\hfill 
+\textbf{\small \ldots~/ #1 points}}
+
+\newcommand\trou[1]{\small ~~.~ }
+
+\newcommand\interligne[1]{\renewcommand{\baselinestretch}{#1}}
+
+\newcounter{mypage}
+\setcounter{mypage}{1}
+\newcommand{\comptepage}{\arabic{mypage}\refstepcounter{mypage}}
+
+\newcounter{mycalc}
+\setcounter{mycalc}{1}
+\newcommand{\comptecalcul}{\Alph{mycalc}\refstepcounter{mycalc}}
+
+
+\newcommand\bonus{\vspace{0.5cm}{\normalfont\Large\bfseries Exercice (Bonus)}}
+
+\newcounter{myseed}
+\setcounter{myseed}{1}
+\newcommand{\newseed}{\refstepcounter{myseed}}
+
+\newcounter{myletter}
+\setcounter{myletter}{1}
+\newcommand{\newletter}{\Alph{myletter}\refstepcounter{myletter}}
+
+
+\newcommand{\randomletter}{\Alph{\aletter}}
+
+\newcommand{\A}{A}
+\newcommand{\B}{B}
+\newcommand{\C}{C}
+
+\newcommand{\corrige}{(\textit{Exercice corrigé})}
+
+
+
+
+
+
+
+
+
+
