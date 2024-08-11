@@ -5,10 +5,10 @@
 
 \renewcommand{\arraystretch}{1.5}
 
-\newcommand*\mytitle[1]{
+\newcommand*\mytitle[2]{
 \begin{center}
     \begin{Large}
-        \textsc{#1}
+         \textsc{Séquence #1} : #2
     \end{Large}
 \end{center}}
 
@@ -131,7 +131,6 @@ Classe : \dotfill}
 \setcounter{myletter}{1}
 \newcommand{\newletter}{\Alph{myletter}\refstepcounter{myletter}}
 
-
 \newcommand{\randomletter}{\Alph{\aletter}}
 
 \newcommand{\A}{A}
@@ -140,7 +139,16 @@ Classe : \dotfill}
 
 \newcommand{\corrige}{(\textit{Exercice corrigé})}
 
+\pagestyle{fancy}
 
+\renewcommand{\headrulewidth}{.5pt}
+\fancyhead[L]{\textbf{\the\year}} 
+%\fancyhead[C]{}
+\fancyhead[R]{\textit{CSMH}}
+
+%\fancyfoot[L]{}
+\fancyfoot[C]{\textbf{(\thepage)}} 
+%\fancyfoot[R]{} 
 
 
 
