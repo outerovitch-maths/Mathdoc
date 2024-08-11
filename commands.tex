@@ -148,9 +148,42 @@ Classe : \dotfill}
 
 %\fancyfoot[L]{}
 \fancyfoot[C]{\textbf{(\thepage)}} 
-%\fancyfoot[R]{} 
+% \fancyfoot[R]{}
 
+\theoremstyle{break}
 
+\newtheorem{ttheoreme}{Théorème}
+\newcommand{\theoreme}[1]{\begin{ttheoreme}#1\end{ttheoreme}}
+
+\newtheorem{llemme}{Lemme}
+\newcommand{\lemme}[1]{\begin{llemme}#1\end{llemme}}
+
+\newtheorem{ddemonstration}{Démonstration}
+\newcommand{\demonstration}[1]{\begin{ddemonstration}#1 \hfill $\blacksquare$ \end{ddemonstration}}
+
+\newtheorem{ppropriete}{Propriété}
+\newcommand{\propriete}[1]{\begin{ppropriete}#1\end{ppropriete}}
+
+\newtheorem{ddefinition}{Définition}
+\newcommand{\definition}[1]{\begin{ddefinition}#1\end{ddefinition}}
+
+\newtheorem{eexemple}{Exemple}
+\newcommand{\exemple}[1]{\begin{eexemple}#1\end{eexemple}}
+
+\newtheorem{pprobleme}{Problème}
+\newcommand{\probleme}[1]{\begin{pprobleme}#1\end{pprobleme}}
+
+\newtheorem*{rremarque}{Remarque}
+\newcommand{\remarque}[1]{\begin{rremarque}#1\end{rremarque}}
+
+\newtheorem*{nnotation}{Notation}
+\newcommand{\notation}[1]{\begin{nnotation}#1\end{nnotation}}
+
+\newtheorem*{vvocabulaire}{Vocabulaire}
+\newcommand{\vocabulaire}[1]{\begin{vvocabulaire}#1\end{vvocabulaire}}
+
+\newtheorem*{rrappel}{Rappel}
+\newcommand{\rappel}[1]{\begin{rrappel}#1\end{rrappel}}
 
 
 

@@ -5,6 +5,17 @@
  (lambda ()
    (TeX-add-symbols
     '("diff" ["argument"] 0)
+    '("rappel" 1)
+    '("vocabulaire" 1)
+    '("notation" 1)
+    '("remarque" 1)
+    '("probleme" 1)
+    '("exemple" 1)
+    '("definition" 1)
+    '("propriete" 1)
+    '("demonstration" 1)
+    '("lemme" 1)
+    '("theoreme" 1)
     '("interligne" 1)
     '("trou" 1)
     '("bareme" 1)
@@ -44,6 +55,15 @@
     "B"
     "C"
     "corrige")
+   (LaTeX-add-environments
+    '("proof" LaTeX-env-args ["argument"] 0)
+    "ttheoreme"
+    "llemme"
+    "ddemonstration"
+    "ppropriete"
+    "ddefinition"
+    "eexemple"
+    "pprobleme")
    (LaTeX-add-counters
     "mypage"
     "mycalc"
