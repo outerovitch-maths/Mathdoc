@@ -124,6 +124,96 @@ This document provides a detailed explanation of various custom LaTeX commands d
 - **Description**: Creates fields for "Name", "First Name", and "Class" with dotted lines.
 - **Usage**: `\nom`
 
-## 23. Difficulty Rating: \diff
+## 23. Difficulty Rating: \diff (continued)
 - **LaTeX**: `\newcommand{\diff}[1][99]{ ~~ \ifnum#1=1 $\bigstar\largestar\largestar\largestar$ \else\ifnum#1=2 $ \bigstar\bigstar\largestar\largestar$ \else\ifnum#1=3 $\bigstar\bigstar\bigstar\largestar$ \else\ifnum#1=4  $\bigstar\bigstar\bigstar\bigstar$ \else\ifnum#1>4 \ldots \fi\fi\fi\fi\fi\ }`
-- **
+- **Description**: Displays a difficulty rating using stars. The number of stars corresponds to the difficulty level, from 1 (easiest) to 4 (hardest). If the number is greater than 4, an ellipsis ("...") is shown.
+- **Usage**: `\diff[3]` produces a difficulty rating with 3 stars.
+
+## 24. Question Rating: \qid
+- **LaTeX**: `\newcommand{\qid}[2]{{\color{red}#1} -- {#2}}`
+- **Description**: Adds a red-colored number before the question or section ID, followed by the question text.
+- **Usage**: `\qid{Q1}{What is the capital of France?}` will display "Q1 -- What is the capital of France?" with "Q1" in red.
+
+## 25. Answer Field: \reponse
+- **LaTeX**: `\newcommand{\reponse}{\noindent\underline{Réponse:} \dotfill}`
+- **Description**: Provides a line for the answer with the label "Réponse:" underlined.
+- **Usage**: `\reponse` will generate a line for the answer.
+
+## 26. Custom Sectioning: \partie
+- **LaTeX**: `\newcommand{\partie}[1]{\section*{#1}}`
+- **Description**: Creates an unnumbered section with a given title.
+- **Usage**: `\partie{Introduction}` creates a section titled "Introduction" without a section number.
+
+## 27. Titled Frame: \titreencadre
+- **LaTeX**: `\newcommand{\titreencadre}[2]{\noindent\fbox{\parbox{\linewidth}{\textbf{#1} #2}}}`
+- **Description**: Creates a framed box around the content with a bold title.
+- **Usage**: `\titreencadre{Note:}{This is important!}` will create a framed box with the title "Note:" and the content "This is important!"
+
+## 28. Footnotes: \footnote
+- **LaTeX**: `\newcommand{\footnote}[1]{\textsuperscript{#1}}`
+- **Description**: Adds a superscript footnote marker at the current position.
+- **Usage**: `Some text\footnote{1}` will add a footnote marker "1".
+
+## 29. Custom Commands for Fill-in-the-Blank Exercises
+
+### 29.1 \blanc
+- **LaTeX**: `\newcommand{\blanc}{\underline{\phantom{m}}}`
+- **Description**: Creates a blank underline for fill-in-the-blank exercises.
+- **Usage**: `Fill in the \blanc{}` creates a blank space.
+
+### 29.2 \lgen
+- **LaTeX**: `\newcommand{\lgen}[1]{\underline{\makebox[#1cm]{}}}`
+- **Description**: Creates a blank space with a specified length.
+- **Usage**: `\lgen{5}` creates a 5cm-long blank space.
+
+## 30. Custom Code for Mathematical Symbols
+
+### 30.1 \sqrtm
+- **LaTeX**: `\newcommand{\sqrtm}[1]{\sqrt{#1}}`
+- **Description**: Custom square root command for clarity in mathematical expressions.
+- **Usage**: `\sqrtm{16}` produces the square root of 16.
+
+### 30.2 \vecm
+- **LaTeX**: `\newcommand{\vecm}[1]{\overrightarrow{#1}}`
+- **Description**: Custom vector notation command for mathematical expressions.
+- **Usage**: `\vecm{AB}` produces the vector notation of AB.
+
+## 31. Custom Environment for Proofs: \preuve
+- **LaTeX**: `\newcommand{\preuve}{\paragraph{Preuve: }}`
+- **Description**: Introduces a paragraph labeled "Preuve:" for proof sections.
+- **Usage**: `\preuve This is the proof.` will label the paragraph as a proof.
+
+## 32. Angles and Geometry: \anglem
+- **LaTeX**: `\newcommand{\anglem}[1]{\angle #1}`
+- **Description**: Custom command to denote angles in geometric figures.
+- **Usage**: `\anglem{ABC}` will produce the angle symbol followed by "ABC".
+
+## 33. Custom Formatting for Theorems: \theoreme
+- **LaTeX**: `\newcommand{\theoreme}{\paragraph{Théorème: }}`
+- **Description**: Introduces a paragraph labeled "Théorème:" for theorem sections.
+- **Usage**: `\theoreme Pythagorean theorem states...` will label the paragraph as a theorem.
+
+## 34. Mathematical Equations: \eqm
+- **LaTeX**: `\newcommand{\eqm}[1]{\begin{equation}#1\end{equation}}`
+- **Description**: Custom command to encapsulate equations within a numbered environment.
+- **Usage**: `\eqm{E=mc^2}` will produce a numbered equation.
+
+## 35. Various Other Custom Commands
+
+### 35.1 \tabitem
+- **LaTeX**: `\newcommand{\tabitem}{~~\textbullet~~}`
+- **Description**: Creates a bullet point item, commonly used in tables.
+- **Usage**: `\tabitem` within a tabular environment.
+
+### 35.2 \divm
+- **LaTeX**: `\newcommand{\divm}{\div}`
+- **Description**: Custom command for the division symbol.
+- **Usage**: `12 \divm 4` will display "12 ÷ 4".
+
+### 35.3 \pm
+- **LaTeX**: `\newcommand{\pm}{\ensuremath{\pm}}`
+- **Description**: Custom command for the plus-minus symbol.
+- **Usage**: `\pm` will display the ± symbol.
+
+## Conclusion
+This document provides a variety of custom LaTeX commands designed to streamline document preparation, especially in academic and mathematical contexts. Each command has a specific purpose, ranging from simple formatting to complex mathematical notation. By incorporating these commands into your LaTeX documents, you can achieve a more efficient and visually consistent workflow.
