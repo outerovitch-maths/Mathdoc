@@ -22,7 +22,7 @@
 
 \newcommand{\dtf}{\makebox[\linewidth]{\dotfill}}
 
-\newcommand{\exercice}{\section{}}
+%\newcommand{\exercice}{\section{}}
 
 \newcommand{\mkb}[2]{\makebox[#1]{#2}}
 
@@ -48,7 +48,7 @@
 \myrule{#2} \textsc{#1} \myrule{#2}
 \end{LARGE}}}
 
-\newcommand{\colonnesep}[1]{\setlength{\columnseprule}{#1pt}}
+\newcommand{\colonnesep}[1]{\setlength{\columnseprule}{ #1 pt}}
 
 \newcommand{\myfig}[2]{\begin{Figure}
 \centering
@@ -141,51 +141,79 @@ Classe : \dotfill}
 
 \pagestyle{fancy}
 
+  
+\theoremstyle{plain}
+
+\newtheorem{eexercice}{Exercice}
+\newcommand{\exercice}[1]{\begin{eexercice}\phantom{} \par
+    {\normalfont #1} \end{eexercice}}
+
+\newtheorem{ttheoreme}{Théorème}
+\newcommand{\theoreme}[1]{\begin{ttheoreme} #1 \end{ttheoreme}}
+
+\newtheorem{llemme}{Lemme}
+\newcommand{\lemme}[1]{\begin{llemme} #1 \end{llemme}}
+
+\newtheorem{ddemonstration}{Démonstration}
+\newcommand{\demonstration}[1]{\begin{ddemonstration} #1 \hfill $\blacksquare$ \end{ddemonstration}}
+
+\newtheorem{ppropriete}{Propriété}
+\newcommand{\propriete}[1]{\begin{ppropriete} #1 \end{ppropriete}}
+
+\newtheorem{ddefinition}{Définition}
+\newcommand{\definition}[1]{\begin{ddefinition} #1 \end{ddefinition}}
+
+\newtheorem{eexemple}{Exemple}
+\newcommand{\exemple}[1]{\begin{eexemple} #1 \end{eexemple}}
+
+\newtheorem{pprobleme}{Problème}
+\newcommand{\probleme}[1]{\begin{pprobleme} #1 \end{pprobleme}}
+
+\newtheorem*{rremarque}{Remarque}
+\newcommand{\remarque}[1]{\begin{rremarque} #1 \end{rremarque}}
+
+\newtheorem*{nnotation}{Notation}
+\newcommand{\notation}[1]{\begin{nnotation} #1 \end{nnotation}}
+
+\newtheorem*{vvocabulaire}{Vocabulaire}
+\newcommand{\vocabulaire}[1]{\begin{vvocabulaire} #1 \end{vvocabulaire}}
+
+\newtheorem*{rrappel}{Rappel}
+\newcommand{\rappel}[1]{\begin{rrappel} #1 \end{rrappel}}
+
+% Begin expl3 code
+\ExplSyntaxOn
+% Define variables for year handling
+\int_new:N \l_my_year_int
+\int_new:N \l_my_previous_year_int
+\int_new:N \l_my_next_year_int
+\int_new:N \l_my_month_int
+
+% Set the current year and month
+\int_set:Nn \l_my_year_int {\the\year}
+\int_set:Nn \l_my_month_int {\the\month}
+
+% Adjust years based on the month
+\int_set:Nn \l_my_previous_year_int {\int_eval:n {\l_my_year_int - 1}}
+\int_set:Nn \l_my_next_year_int {\int_eval:n {\l_my_year_int + 1}}
+
+% Define the academic year command
+\newcommand{\academicyear}{
+  \int_compare:nNnTF {\l_my_month_int} < 8
+    { \int_use:N \l_my_previous_year_int - \int_use:N \l_my_year_int }
+    { \int_use:N \l_my_year_int - \int_use:N \l_my_next_year_int }
+}
+
+\ExplSyntaxOff
+
 \renewcommand{\headrulewidth}{.5pt}
-\fancyhead[L]{\textbf{\the\year}} 
+\fancyhead[L]{\textbf{\academicyear}} 
 %\fancyhead[C]{}
-\fancyhead[R]{\textit{CSMH}}
+\fancyhead[R]{\textbf{CSMH}}
 
 %\fancyfoot[L]{}
 \fancyfoot[C]{\textbf{(\thepage)}} 
 % \fancyfoot[R]{}
-
-\theoremstyle{break}
-
-\newtheorem{ttheoreme}{Théorème}
-\newcommand{\theoreme}[1]{\begin{ttheoreme}#1\end{ttheoreme}}
-
-\newtheorem{llemme}{Lemme}
-\newcommand{\lemme}[1]{\begin{llemme}#1\end{llemme}}
-
-\newtheorem{ddemonstration}{Démonstration}
-\newcommand{\demonstration}[1]{\begin{ddemonstration}#1 \hfill $\blacksquare$ \end{ddemonstration}}
-
-\newtheorem{ppropriete}{Propriété}
-\newcommand{\propriete}[1]{\begin{ppropriete}#1\end{ppropriete}}
-
-\newtheorem{ddefinition}{Définition}
-\newcommand{\definition}[1]{\begin{ddefinition}#1\end{ddefinition}}
-
-\newtheorem{eexemple}{Exemple}
-\newcommand{\exemple}[1]{\begin{eexemple}#1\end{eexemple}}
-
-\newtheorem{pprobleme}{Problème}
-\newcommand{\probleme}[1]{\begin{pprobleme}#1\end{pprobleme}}
-
-\newtheorem*{rremarque}{Remarque}
-\newcommand{\remarque}[1]{\begin{rremarque}#1\end{rremarque}}
-
-\newtheorem*{nnotation}{Notation}
-\newcommand{\notation}[1]{\begin{nnotation}#1\end{nnotation}}
-
-\newtheorem*{vvocabulaire}{Vocabulaire}
-\newcommand{\vocabulaire}[1]{\begin{vvocabulaire}#1\end{vvocabulaire}}
-
-\newtheorem*{rrappel}{Rappel}
-\newcommand{\rappel}[1]{\begin{rrappel}#1\end{rrappel}}
-
-
 
 
 

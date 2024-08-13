@@ -16,6 +16,7 @@
     '("demonstration" 1)
     '("lemme" 1)
     '("theoreme" 1)
+    '("exercice" 1)
     '("interligne" 1)
     '("trou" 1)
     '("bareme" 1)
@@ -39,7 +40,6 @@
     '("mytitle" 2)
     '("circled" 1)
     "dtf"
-    "exercice"
     "tabline"
     "degre"
     "phm"
@@ -54,9 +54,10 @@
     "A"
     "B"
     "C"
-    "corrige")
+    "corrige"
+    "academicyear")
    (LaTeX-add-environments
-    '("proof" LaTeX-env-args ["argument"] 0)
+    "eexercice"
     "ttheoreme"
     "llemme"
     "ddemonstration"
