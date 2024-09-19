@@ -1,0 +1,445 @@
+\ProvidesPackage{Mathdoc}[12/09/2024 v1.7 A package for formatting math exercises]
+
+% Load required packages
+\RequirePackage{amsmath, amssymb, xcolor, tcolorbox, MnSymbol, xparse, enumitem, titlesec}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[none]{hyphenat}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{tgschola}
+\RequirePackage{multicol}
+\RequirePackage{multirow}
+\RequirePackage{tabularx}
+\RequirePackage{graphicx}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+%\RequirePackage{amsthm}
+%\RequirePackage{ntheorem}
+%\RequirePackage{hyperref}
+\RequirePackage{xstring}
+\RequirePackage[table]{xcolor}
+\RequirePackage{xfp}
+\RequirePackage[left=1cm,right=1cm,top=1.5cm,bottom=2cm]{geometry}
+\RequirePackage{mathtools, bm}
+\RequirePackage{diagbox}
+\RequirePackage{slashbox}
+%\RequirePackage{pgfplots}
+\RequirePackage{mathrsfs}
+\RequirePackage{tikz}
+\RequirePackage{tkz-euclide}
+\RequirePackage{scalerel}
+\RequirePackage{pict2e}
+\RequirePackage{comment}
+\RequirePackage{titletoc}
+\RequirePackage{expl3}
+\RequirePackage{lipsum}
+\RequirePackage{fancyhdr}
+\RequirePackage{ProfLycee}
+
+% Package options
+
+
+% Custom commands
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\N}{\mathbb{N}}
+
+\newcommand\EXO[1]{
+\begin{exercice}
+#1
+\end{exercice}}
+
+\newcommand\mc[1]{
+\begin{multicols}{2}
+#1
+\end{multicols}}
+
+
+\newcommand\enumi[1]{
+\begin{enu}
+#1
+\end{enu}}
+
+\newcommand\interligne[1]{\renewcommand{\baselinestretch}{#1}}
+\newcommand{\diff}[1]{%
+    \ifnum#1=1 $\bigstar\largestar\largestar\largestar$%
+    \else\ifnum#1=2 $ \bigstar\bigstar\largestar\largestar$%
+    \else\ifnum#1=3 $\bigstar\bigstar\bigstar\largestar$%
+    \else\ifnum#1=4  $\bigstar\bigstar\bigstar\bigstar$%
+    \else\ifnum#1=5  $\bigstar\bigstar\bigstar\bigstar\bigstar$%
+    \else\ifnum#1=6  %
+    \else\ifnum#1>6 {\fontencoding{U}\fontfamily{futs}\selectfont\char 49\relax}%
+    \fi\fi\fi\fi\fi\fi\fi%
+}
+
+\newcommand{\consigne}[1]{%
+    \ifnum#1=1
+    \begin{center}
+   \textit{ L'usage de la calculatrice est autorisé. \\ L'utilisation d'un brouillon est vivement conseillée. \\ Toute forme de recherche ou de raisonnement, même partielle, sera prise en compte et valorisée dans l'évaluation.}
+    \end{center}%
+    \else
+    \begin{center}
+   \textit{L'usage de la calculatrice n'est pas autorisé. \\ L'utilisation d'un brouillon est vivement conseillée. \\ Toute forme de recherche ou de raisonnement, même partielle, sera prise en compte et valorisée dans l'évaluation.}
+    \end{center}%
+\fi%
+}
+
+
+\newcommand{\dtf}{\makebox[\linewidth]{\dotfill}}
+\newcommand{\degre}{\ensuremath{^\circ}}
+\newcommand{\phm}{\phantom{0}}
+\newcommand{\encart}[1]{\framebox[\linewidth]{\rule{0pt}{#1}}}
+
+\newcommand{\entetedevoirs}[1]{
+\phantom{0}
+\vspace{-1.25cm}
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X|c|}
+\cline{2-2}
+                & \rule{0pt}{4ex} \Large \textbf{Note}\rule[-1.5ex]{0pt}{3ex}             \\ \cline{2-2} 
+Nom : \dotfill    \phantom{0000} & \multirow{3}{*}{\resizebox{3cm}{!}{ \ldots/#1 }} \\
+Prénom : \dotfill  \phantom{0000} &                   \\
+Classe : \dotfill  \phantom{0000} &                   \\ \cline{2-2} 
+\end{tabularx}
+\end{center}}
+
+\newcommand{\competences}[1]{
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{|c|>{\centering\arraybackslash}X|>{\centering\arraybackslash}m{5.5em}|>{\centering\arraybackslash}m{5.5em}|>{\centering\arraybackslash}m{5.5em}|>{\centering\arraybackslash}m{5.5em}|}
+\hline
+ Référentiel & \large \textbf{Compétence} & \textit{Insuffisant} & \textit{Fragile} & \textit{Satisfaisant} & \textit{Expert}  \\ \hline
+#1
+\end{tabularx}
+}
+
+% Set Counters 
+\newcounter{exercice}
+\setcounter{exercice}{0}
+
+\newcounter{exercicedevoir}
+\setcounter{exercicedevoir}{0}
+
+\newcounter{definition}
+\setcounter{definition}{0}
+
+\newcounter{exemple}
+\setcounter{exemple}{0}
+
+\newcounter{theoreme}
+\setcounter{theoreme}{0}
+
+\newcounter{propriete}
+\setcounter{propriete}{0}
+
+\newcounter{lemme}
+\setcounter{lemme}{0}
+
+\newcounter{remarque}
+\setcounter{lemme}{0}
+
+\newcounter{demonstration}
+\setcounter{demonstration}{0}
+
+% Custom Environment for definition %% Numbered
+\NewDocumentEnvironment{definition}{ o }
+{%
+    \refstepcounter{definition}
+    \IfNoValueTF{#1}%
+        {%
+            % No first title provided
+            \noindent\textbf{Définition \thedefinition~:}%
+        }%
+        {%
+            % First title provided
+            \noindent\textbf{Définition \thedefinition~: \textit{(#1)}}%
+        }%
+            \phantom{0} \\
+}
+{%
+    \vspace{1em}
+}
+
+% Custom Environment for propriete %% Numbered
+\NewDocumentEnvironment{propriete}{ o }
+{%
+    \refstepcounter{propriete}
+    \IfNoValueTF{#1}%
+        {%
+            % No first title provided
+            \noindent\textbf{Propriété \thepropriete~:}%
+        }%
+        {%
+            % First title provided
+            \noindent\textbf{Propriété \thepropriete~: \textit{(#1)}}%
+        }%
+            \phantom{0} \\
+}
+{%
+    \vspace{1em}
+}
+
+% Custom Environment for exemple %% Numbered
+\NewDocumentEnvironment{exemple}{ o }
+{%
+    \refstepcounter{exemple}
+    \IfNoValueTF{#1}%
+        {%
+            % No first title provided
+            \noindent\textbf{Exemple \theexemple~:}%
+        }%
+        {%
+            % First title provided
+            \noindent\textbf{Exemple \theexemple~: \textit{(#1)}}%
+        }%
+            \phantom{0} \\
+}
+{%
+    \vspace{1em}
+}
+
+% Custom Environment for remarque %% Numbered
+\NewDocumentEnvironment{remarque}{ o }
+{%
+    \refstepcounter{remarque}
+    \IfNoValueTF{#1}%
+        {%
+            % No first title provided
+            \noindent\textbf{Remarque \theremarque~:}%
+        }%
+        {%
+            % First title provided
+            \noindent\textbf{Remarque \theremarque~: \textit{(#1)}}%
+        }%
+            \phantom{0} \\
+}
+{%
+    \vspace{1em}
+}
+  
+% Custom Environment for rappel %% Not-Numbered
+\NewDocumentEnvironment{rappel}{ o }
+{%
+    \IfNoValueTF{#1}%
+        {%
+            % No first title provided
+            \noindent\textbf{Rappel~:}%
+        }%
+        {%
+            % First title provided
+            \noindent\textbf{Rappel~: \textit{(#1)}}%
+        }%
+            \phantom{0} \\
+}
+{%
+    \vspace{1em}
+}
+
+% Custom Environment for vocabulaire %% Not-Numbered
+\NewDocumentEnvironment{vocabulaire}{ o }
+{%
+    \IfNoValueTF{#1}%
+        {%
+            % No first title provided
+            \noindent\textbf{Vocabulaire~:}%
+        }%
+        {%
+            % First title provided
+            \noindent\textbf{Vocabulaire~: \textit{(#1)}}%
+        }%
+            \phantom{0} \\
+}
+{%
+    \vspace{1em}}
+
+
+% Custom Environment for demonstration %% Not-Numbered
+\NewDocumentEnvironment{demonstration}{ o }
+{%
+    \IfNoValueTF{#1}%
+        {%
+            % No first title provided
+            \noindent\textbf{Démonstration~:}%
+        }%
+        {%
+            % First title provided
+            \noindent\textbf{Démonstration~: \textit{(#1)}}%
+        }%
+            \phantom{0} \\
+}
+{%
+\hfill $\square$
+    \vspace{1em}
+}
+
+% Custom Environment for Notation %% Not-Numbered
+\NewDocumentEnvironment{notation}{ o }
+{%
+    \IfNoValueTF{#1}%
+        {%
+            % No first title provided
+            \noindent\textbf{Notation~:}%
+        }%
+        {%
+            % First title provided
+            \noindent\textbf{Notation~: \textit{(#1)}}%
+        }%
+            \phantom{0} \\
+}
+{%
+    \vspace{1em}
+}
+
+
+% Custom Environment for exercises
+\NewDocumentEnvironment{exercice}{ O{6} o }
+{%
+    \refstepcounter{exercice}
+    \begin{tcolorbox}[
+    width=\linewidth-1cm,
+    colback=white, % Background color
+    colbacktitle=white,
+    colframe=black, % Border color
+    fonttitle=\bfseries,
+    coltitle=black,
+    boxrule=0.5mm,
+    sharp corners,
+    before=\vspace{1em},
+    after=\vspace{1em},
+    toprule=0.5mm, % Thickness of the top border
+    bottomrule=0.5mm, % Thickness of the bottom border
+    leftrule=0.5mm, % No left border
+    rightrule=0.5mm,
+    title=Exercice \theexercice~: \IfNoValueTF{#2}%
+        {%
+            % No first title provided
+            \textbf{}%
+        }%
+        {%
+            % First title provided
+            \textbf{\textit{(#2)}}%
+        }% 
+        \hfill \diff{#1}
+    ]
+}
+{%
+\end{tcolorbox}
+}
+
+\NewDocumentEnvironment{exercicedevoir}{ O{5} o }
+{%
+    \refstepcounter{exercicedevoir}
+    \begin{tcolorbox}[
+    width=\linewidth,
+    colback=white, % Background color
+    colbacktitle=white,
+    titlerule=0mm,
+    colframe=white, % Border color
+    fonttitle=\bfseries,
+    coltitle=black,
+    boxrule=0.5mm,
+    sharp corners,
+    before=\vspace{1em},
+    after=\vspace{1em},
+    toprule=-0.5mm, % Thickness of the top border
+    bottomrule=-0.5mm, % Thickness of the bottom border
+    leftrule=0.5mm, % No left border
+    rightrule=-0.5mm,
+    title=Exercice \theexercicedevoir~: \IfNoValueTF{#2}%
+        {%
+            % No first title provided
+            \textbf{}%
+        }%
+        {%
+            % First title provided
+            \textbf{\textit{(#2)}}%
+        }% 
+        \hfill \textbf{\small \ldots~/ #1 points}
+    ]
+}
+{%
+\end{tcolorbox}
+}
+
+% Section
+\RequirePackage{titlesec}
+\titleformat{\section}
+  {\normalfont\Large\bfseries} % Format for the section title
+  {\Roman{section} -}          % Section number format (Roman numeral followed by a dash)
+  {0.5em}                         % Space between number and title
+  {}     
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries} % Format for the subsection title
+  {\arabic{subsection} - }             % Subsection number
+  {.5em}                         % Space between number and title
+  {}                            % Code before title
+
+% New lists
+\RequirePackage{enumitem}
+\newlist{enu}{enumerate}{1}
+\setlist[enu,1]{label=(\alph*),left=1em}
+
+\newenvironment{enuspaced}
+  {%
+    \vspace{-0.5cm} % Vertical space before the list
+    \begin{enu}
+  }
+  {%
+    \end{enu}
+  }
+
+% New command title
+\def\thetitle{\@title}
+\def\theauthor{\@author}
+\def\thedate{\@date}
+\renewcommand{\maketitle}{
+    \begin{center}
+        {\Huge \bfseries \thetitle \par}
+        \vspace{1cm}
+        {\Large \textit{\theauthor} \par}
+        \vspace{1cm}
+        {\large \the\year \par}
+    \end{center}
+}
+
+% Begin expl3 code
+\ExplSyntaxOn
+% Define variables for year handling
+\int_new:N \l_my_year_int
+\int_new:N \l_my_previous_year_int
+\int_new:N \l_my_next_year_int
+\int_new:N \l_my_month_int
+
+% Set the current year and month
+\int_set:Nn \l_my_year_int {\the\year}
+\int_set:Nn \l_my_month_int {\the\month}
+
+% Adjust years based on the month
+\int_set:Nn \l_my_previous_year_int {\int_eval:n {\l_my_year_int - 1}}
+\int_set:Nn \l_my_next_year_int {\int_eval:n {\l_my_year_int + 1}}
+
+% Define the academic year command
+\newcommand{\academicyear}{
+  \int_compare:nNnTF {\l_my_month_int} < 8
+    { \int_use:N \l_my_previous_year_int - \int_use:N \l_my_year_int }
+    { \int_use:N \l_my_year_int - \int_use:N \l_my_next_year_int }
+}
+
+\ExplSyntaxOff
+
+\input{school.tex}
+
+\pagestyle{fancy}
+\newcommand{\centerhead}{Chap. }
+\renewcommand{\headrulewidth}{.5pt}
+\fancyhead[L]{\textbf{\academicyear}} 
+\fancyhead[C]{\textit{\centerhead}}
+\fancyhead[R]{\textbf{\school}}
+
+%\fancyfoot[L]{}
+\fancyfoot[C]{\textbf{(\thepage)}} 
+% \fancyfoot[R]{}
+
+\newcommand{\midpagehead}{\textbf{\academicyear} \hfill \textit{\centerhead} \hfill \textbf{CSMH} \vspace{0.1cm} \hrule}
