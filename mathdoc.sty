@@ -75,15 +75,38 @@
     \fi\fi\fi\fi\fi\fi\fi%
 }
 
-\newcommand{\consigne}[1]{%
+%%Consignes en devoirs%%
+
+\newcommand{\duree}[1]{%
+   \textit{Durée : #1 \\}
+}
+
+\newcommand{\calculatrice}[1]{%
     \ifnum#1=1
-    \begin{center}
-   \textit{ L'usage de la calculatrice est autorisé. \\ L'utilisation d'un brouillon est vivement conseillée. \\ Toute forme de recherche ou de raisonnement, même partielle, sera prise en compte et valorisée dans l'évaluation.}
-    \end{center}%
+   \textit{L'usage de la calculatrice est autorisé.\\}
     \else
-    \begin{center}
-   \textit{L'usage de la calculatrice n'est pas autorisé. \\ L'utilisation d'un brouillon est vivement conseillée. \\ Toute forme de recherche ou de raisonnement, même partielle, sera prise en compte et valorisée dans l'évaluation.}
-    \end{center}%
+   \textit{L'usage de la calculatrice n'est pas autorisé.\\}
+\fi%
+}
+
+\newcommand{\brouillon}{%
+\textit{L'utilisation d'un brouillon est vivement conseillée.}\\
+}
+
+\newcommand{\recherche}{%
+Toute forme de recherche ou de raisonnement, même partielle, sera prise en compte et valorisée dans l'évaluation.\\
+}
+
+\newcommand{\copieseparee}[1]{%
+    \ifnum#1=1
+   \textit{Les réponses seront rédigées sur une copie séparée.\\ 
+   Le soin apporté à la présentation (organisation, lisibilité, clarté) sera
+   pris en compte.\\}
+    \else
+   \textit{Les réponses devront être rédigées directement sur le
+   sujet. \\
+   Le soin apporté à la présentation (organisation, lisibilité,
+   clarté) sera pris en compte.\\}
 \fi%
 }
 
