@@ -55,11 +55,6 @@ Example of how to structure your LaTeX document:
 
 \begin{document}
 
-\title{Math Lesson}
-\author{Colin}
-\date{\today}
-\maketitle
-
 % Your lesson content here
 
 \end{document}
