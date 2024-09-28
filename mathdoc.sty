@@ -81,6 +81,14 @@
    \textit{Durée : #1 \\}
 }
 
+\newcommand{\total}[1]{%
+   \textit{Total des points : #1 \\}
+}
+
+\newcommand{\coefficient}[1]{%
+   \textit{Coefficient: #1 \\}
+}
+
 \newcommand{\calculatrice}[1]{%
     \ifnum#1=1
    \textit{L'usage de la calculatrice est autorisé.\\}
@@ -110,12 +118,6 @@ Toute forme de recherche ou de raisonnement, même partielle, sera prise en comp
 \fi%
 }
 
-
-\newcommand{\dtf}{\makebox[\linewidth]{\dotfill}}
-\newcommand{\degre}{\ensuremath{^\circ}}
-\newcommand{\phm}{\phantom{0}}
-\newcommand{\encart}[1]{\framebox[\linewidth]{\rule{0pt}{#1}}}
-
 \newcommand{\entetedevoirs}[1]{
 \phantom{0}
 \vspace{-1.25cm}
@@ -138,6 +140,12 @@ Classe : \dotfill  \phantom{0000} &                   \\ \cline{2-2}
 #1
 \end{tabularx}
 }
+
+%Autres commandes 
+\newcommand{\dtf}{\makebox[\linewidth]{\dotfill}}
+\newcommand{\degre}{\ensuremath{^\circ}}
+\newcommand{\phm}{\phantom{0}}
+\newcommand{\encart}[1]{\framebox[\linewidth]{\rule{0pt}{#1}}}
 
 % Set Counters 
 \newcounter{exercice}
@@ -243,6 +251,24 @@ Classe : \dotfill  \phantom{0000} &                   \\ \cline{2-2}
     \vspace{1em}
 }
   
+% Custom Environment for correction %% Not-Numbered
+\NewDocumentEnvironment{correction}{ o }
+{%
+    \IfNoValueTF{#1}%
+        {%
+            % No first title provided
+            \noindent\textbf{Correction.}%
+        }%
+        {%
+            % First title provided
+            \noindent\textbf{Correction. \textit{(#1)}}%
+        }%
+            \phantom{0} \\
+}
+{%
+    \vspace{1em}
+}
+
 % Custom Environment for rappel %% Not-Numbered
 \NewDocumentEnvironment{rappel}{ o }
 {%
@@ -260,6 +286,8 @@ Classe : \dotfill  \phantom{0000} &                   \\ \cline{2-2}
 {%
     \vspace{1em}
 }
+
+
 
 % Custom Environment for vocabulaire %% Not-Numbered
 \NewDocumentEnvironment{vocabulaire}{ o }
