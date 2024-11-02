@@ -18,6 +18,7 @@
 \RequirePackage{xstring}
 \RequirePackage[table]{xcolor}
 \RequirePackage{xfp}
+\RequirePackage{xlop}
 \RequirePackage[left=1cm,right=1cm,top=1.5cm,bottom=2cm]{geometry}
 \RequirePackage{mathtools, bm}
 \RequirePackage{diagbox}
@@ -43,6 +44,8 @@
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\opset{decimalsepsymbol={,}}
 
 % Custom commands
 
@@ -159,6 +162,7 @@ Prénom : \dotfill  $\quad$ Classe : \dotfill
 \newcommand{\degre}{\ensuremath{^\circ}}
 \newcommand{\phm}{\phantom{0}}
 \newcommand{\encart}[1]{\framebox[\linewidth]{\rule{0pt}{#1}}}
+\newcommand{\bareme}[1]{\hfill \textbf{\small \ldots~ / #1 points}}
 
 % Set Counters 
 \newcounter{exercice}
