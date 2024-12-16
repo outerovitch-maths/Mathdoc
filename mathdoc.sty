@@ -1,4 +1,4 @@
-\ProvidesPackage{Mathdoc}[19/09/2024 v1.7 A package for formatting math exercises]
+\ProvidesPackage{Mathdoc}[13/12/2024 v1.8 A package for formatting math exercises]
 
 % Load required packages
 \RequirePackage{amsmath, amssymb, xcolor, tcolorbox, MnSymbol, xparse, enumitem, titlesec}
@@ -64,6 +64,11 @@
 #1
 \end{exercice}}
 
+\newcommand{\header}[1]{%
+#1
+}
+
+
 \newcommand\mc[1]{
 \begin{multicols}{2}
 #1
@@ -123,10 +128,13 @@
    pris en compte.\\}
     \else
    \textit{Les réponses devront être rédigées directement sur le
-   sujet. \\
-   Le soin apporté à la présentation (organisation, lisibilité,
-   clarté) sera pris en compte.\\}
+   sujet. \\}
 \fi%
+}
+
+\newcommand{\soin}{%
+   \textit{Le soin apporté à la présentation (organisation, lisibilité, clarté) sera
+   pris en compte.\\}
 }
 
 \newcommand{\entetedevoirs}[1]{
@@ -392,7 +400,7 @@ Prénom : \dotfill  $\quad$ Classe : \dotfill
         }%
         {%
             % First title provided
-            \textbf{\textit{(#2)}}%
+            \textbf{\textit{(#2.)}}%
         }% 
         \hfill \diff{#1}
     ]
@@ -427,7 +435,7 @@ Prénom : \dotfill  $\quad$ Classe : \dotfill
         }%
         {%
             % First title provided
-            \textbf{\textit{(#2)}}%
+            \textbf{\textit{(#2.)}}%
         }% 
         \hfill \textbf{\small \ldots~/ #1 points}
     ]
