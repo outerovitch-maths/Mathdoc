@@ -261,6 +261,25 @@ Prénom : \dotfill  $\quad$ Classe : \dotfill
     \vspace{1em}
 }
 
+% Custom Environment for exemple %% Numbered
+\NewDocumentEnvironment{theoreme}{ o }
+{%
+    \refstepcounter{theoreme}
+    \IfNoValueTF{#1}%
+        {%
+            % No first title provided
+            \noindent\textbf{Théorème \theexemple~:}%
+        }%
+        {%
+            % First title provided
+            \noindent\textbf{Théorème \theexemple~: \textit{(#1)}}%
+        }%
+            \phantom{0} \\
+}
+{%
+    \vspace{1em}
+}
+
 % Custom Environment for remarque %% Numbered
 \NewDocumentEnvironment{remarque}{ o }
 {%
