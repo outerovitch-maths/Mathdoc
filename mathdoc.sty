@@ -56,6 +56,18 @@
 
 \newcommand{\school}{CSMH}
 
+\newcommand{\mydivision}[3]{%
+\begin{center}
+\scalebox{#3}{
+\[
+\begin{array}{r|l}
+#1 & #2 \\
+\cline{2-2} \\ & \\ & \\ & \\ &
+\end{array}%
+\]
+}
+\end{center}
+}
 
 \newcommand{\nonewpage}{\let\clearpage\relax}
 
@@ -81,35 +93,35 @@
 
 \newcommand\interligne[1]{\renewcommand{\baselinestretch}{#1}}
 \newcommand{\diff}[1]{%
-    \ifnum#1=1 $\bigstar\largestar\largestar\largestar$%
-    \else\ifnum#1=2 $ \bigstar\bigstar\largestar\largestar$%
-    \else\ifnum#1=3 $\bigstar\bigstar\bigstar\largestar$%
-    \else\ifnum#1=4  $\bigstar\bigstar\bigstar\bigstar$%
-    \else\ifnum#1=5  $\bigstar\bigstar\bigstar\bigstar\bigstar$%
-    \else\ifnum#1=6  %
-    \else\ifnum#1>6 {\fontencoding{U}\fontfamily{futs}\selectfont\char 49\relax}%
-    \fi\fi\fi\fi\fi\fi\fi%
+\ifnum#1=1 $\bigstar\largestar\largestar\largestar$%
+\else\ifnum#1=2 $ \bigstar\bigstar\largestar\largestar$%
+\else\ifnum#1=3 $\bigstar\bigstar\bigstar\largestar$%
+\else\ifnum#1=4  $\bigstar\bigstar\bigstar\bigstar$%
+\else\ifnum#1=5  $\bigstar\bigstar\bigstar\bigstar\bigstar$%
+\else\ifnum#1=6  %
+\else\ifnum#1>6 {\fontencoding{U}\fontfamily{futs}\selectfont\char 49\relax}%
+\fi\fi\fi\fi\fi\fi\fi%
 }
 
 %%Consignes en devoirs%%
 
 \newcommand{\duree}[1]{%
-   \textit{Durée : #1 \\}
+\textit{Durée : #1 \\}
 }
 
 \newcommand{\total}[1]{%
-   \textit{Total des points : #1 \\}
+\textit{Total des points : #1 \\}
 }
 
 \newcommand{\coefficient}[1]{%
-   \textit{Coefficient: #1 \\}
+\textit{Coefficient: #1 \\}
 }
 
 \newcommand{\calculatrice}[1]{%
-    \ifnum#1=1
-   \textit{L'usage de la calculatrice est autorisé.\\}
-    \else
-   \textit{L'usage de la calculatrice n'est pas autorisé.\\}
+\ifnum#1=1
+\textit{L'usage de la calculatrice est autorisé.\\}
+\else
+\textit{L'usage de la calculatrice n'est pas autorisé.\\}
 \fi%
 }
 
@@ -122,19 +134,19 @@
 }
 
 \newcommand{\copieseparee}[1]{%
-    \ifnum#1=1
-   \textit{Les réponses seront rédigées sur une copie séparée.\\ 
-   Le soin apporté à la présentation (organisation, lisibilité, clarté) sera
-   pris en compte.\\}
-    \else
-   \textit{Les réponses devront être rédigées directement sur le
-   sujet. \\}
+\ifnum#1=1
+\textit{Les réponses seront rédigées sur une copie séparée.\\ 
+Le soin apporté à la présentation (organisation, lisibilité, clarté) sera
+pris en compte.\\}
+\else
+\textit{Les réponses devront être rédigées directement sur le
+sujet. \\}
 \fi%
 }
 
 \newcommand{\soin}{%
-   \textit{Le soin apporté à la présentation (organisation, lisibilité, clarté) sera
-   pris en compte.\\}
+\textit{Le soin apporté à la présentation (organisation, lisibilité, clarté) sera
+pris en compte.\\}
 }
 
 \newcommand{\entetedevoirs}[1]{
@@ -144,7 +156,7 @@
 \renewcommand{\arraystretch}{1.5}
 \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X|c|}
 \cline{2-2}
-                & \rule{0pt}{4ex} \Large \textbf{Note}\rule[-1.5ex]{0pt}{3ex}             \\ \cline{2-2} 
+        & \rule{0pt}{4ex} \Large \textbf{Note}\rule[-1.5ex]{0pt}{3ex}             \\ \cline{2-2} 
 Nom : \dotfill    \phantom{0000} & \multirow{3}{*}{\resizebox{3cm}{!}{ \ldots/#1 }} \\
 Prénom : \dotfill  \phantom{0000} &                   \\
 Classe : \dotfill  \phantom{0000} &                   \\ \cline{2-2} 
@@ -155,7 +167,7 @@ Classe : \dotfill  \phantom{0000} &                   \\ \cline{2-2}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabularx}{\textwidth}{|c|>{\centering\arraybackslash}X|>{\centering\arraybackslash}m{5.5em}|>{\centering\arraybackslash}m{5.5em}|>{\centering\arraybackslash}m{5.5em}|>{\centering\arraybackslash}m{5.5em}|}
 \hline
- Référentiel & \large \textbf{Compétence} & \textit{Insuffisant} & \textit{Fragile} & \textit{Satisfaisant} & \textit{Expert}  \\ \hline
+Référentiel & \large \textbf{Compétence} & \textit{Insuffisant} & \textit{Fragile} & \textit{Satisfaisant} & \textit{Expert}  \\ \hline
 #1
 \end{tabularx}
 }
@@ -207,132 +219,132 @@ Prénom : \dotfill  $\quad$ Classe : \dotfill
 % Custom Environment for definition %% Numbered
 \NewDocumentEnvironment{definition}{ o }
 {%
-    \refstepcounter{definition}
-    \IfNoValueTF{#1}%
-        {%
-            % No first title provided
-            \noindent\textbf{Définition \thedefinition~:}%
-        }%
-        {%
-            % First title provided
-            \noindent\textbf{Définition \thedefinition~: \textit{(#1)}}%
-        }%
-            \phantom{0} \\
+\refstepcounter{definition}
+\IfNoValueTF{#1}%
+{%
+    % No first title provided
+    \noindent\textbf{Définition \thedefinition~:}%
+}%
+{%
+    % First title provided
+    \noindent\textbf{Définition \thedefinition~: \textit{(#1)}}%
+}%
+    \phantom{0} \\
 }
 {%
-    \vspace{1em}
+\vspace{1em}
 }
 
 % Custom Environment for propriete %% Numbered
 \NewDocumentEnvironment{propriete}{ o }
 {%
-    \refstepcounter{propriete}
-    \IfNoValueTF{#1}%
-        {%
-            % No first title provided
-            \noindent\textbf{Propriété \thepropriete~:}%
-        }%
-        {%
-            % First title provided
-            \noindent\textbf{Propriété \thepropriete~: \textit{(#1)}}%
-        }%
-            \phantom{0} \\
+\refstepcounter{propriete}
+\IfNoValueTF{#1}%
+{%
+    % No first title provided
+    \noindent\textbf{Propriété \thepropriete~:}%
+}%
+{%
+    % First title provided
+    \noindent\textbf{Propriété \thepropriete~: \textit{(#1)}}%
+}%
+    \phantom{0} \\
 }
 {%
-    \vspace{1em}
+\vspace{1em}
 }
 
 % Custom Environment for exemple %% Numbered
 \NewDocumentEnvironment{exemple}{ o }
 {%
-    \refstepcounter{exemple}
-    \IfNoValueTF{#1}%
-        {%
-            % No first title provided
-            \noindent\textbf{Exemple \theexemple~:}%
-        }%
-        {%
-            % First title provided
-            \noindent\textbf{Exemple \theexemple~: \textit{(#1)}}%
-        }%
-            \phantom{0} \\
+\refstepcounter{exemple}
+\IfNoValueTF{#1}%
+{%
+    % No first title provided
+    \noindent\textbf{Exemple \theexemple~:}%
+}%
+{%
+    % First title provided
+    \noindent\textbf{Exemple \theexemple~: \textit{(#1)}}%
+}%
+    \phantom{0} \\
 }
 {%
-    \vspace{1em}
+\vspace{1em}
 }
 
 % Custom Environment for theoreme %% Numbered
 \NewDocumentEnvironment{theoreme}{ o }
 {%
-    \refstepcounter{theoreme}
-    \IfNoValueTF{#1}%
-        {%
-            % No first title provided
-            \noindent\textbf{Théorème \thetheoreme~:}%
-        }%
-        {%
-            % First title provided
-            \noindent\textbf{Théorème \thetheoreme~: \textit{(#1)}}%
-        }%
-            \phantom{0} \\
+\refstepcounter{theoreme}
+\IfNoValueTF{#1}%
+{%
+    % No first title provided
+    \noindent\textbf{Théorème \thetheoreme~:}%
+}%
+{%
+    % First title provided
+    \noindent\textbf{Théorème \thetheoreme~: \textit{(#1)}}%
+}%
+    \phantom{0} \\
 }
 {%
-    \vspace{1em}
+\vspace{1em}
 }
 
 % Custom Environment for remarque %% Numbered
 \NewDocumentEnvironment{remarque}{ o }
 {%
-    \refstepcounter{remarque}
-    \IfNoValueTF{#1}%
-        {%
-            % No first title provided
-            \noindent\textbf{Remarque \theremarque~:}%
-        }%
-        {%
-            % First title provided
-            \noindent\textbf{Remarque \theremarque~: \textit{(#1)}}%
-        }%
-            \phantom{0} \\
+\refstepcounter{remarque}
+\IfNoValueTF{#1}%
+{%
+    % No first title provided
+    \noindent\textbf{Remarque \theremarque~:}%
+}%
+{%
+    % First title provided
+    \noindent\textbf{Remarque \theremarque~: \textit{(#1)}}%
+}%
+    \phantom{0} \\
 }
 {%
-    \vspace{1em}
+\vspace{1em}
 }
-  
+
 % Custom Environment for correction %% Not-Numbered
 \NewDocumentEnvironment{correction}{ o }
 {%
-    \IfNoValueTF{#1}%
-        {%
-            % No first title provided
-            \noindent\textbf{Correction.}%
-        }%
-        {%
-            % First title provided
-            \noindent\textbf{Correction. \textit{(#1)}}%
-        }%
-            \phantom{0} \\
+\IfNoValueTF{#1}%
+{%
+    % No first title provided
+    \noindent\textbf{Correction.}%
+}%
+{%
+    % First title provided
+    \noindent\textbf{Correction. \textit{(#1)}}%
+}%
+    \phantom{0} \\
 }
 {%
-    \vspace{1em}
+\vspace{1em}
 }
 
 % Custom Environment for rappel %% Not-Numbered
 \NewDocumentEnvironment{rappel}{ o }
 {%
-    \IfNoValueTF{#1}%
-        {%
-            % No first title provided
-            \noindent\textbf{Rappel~:}%
-        }%
-        {%
-            % First title provided
-            \noindent\textbf{Rappel~: \textit{(#1)}}%
-        }%
-            \phantom{0} \\
+\IfNoValueTF{#1}%
+{%
+    % No first title provided
+    \noindent\textbf{Rappel~:}%
+}%
+{%
+    % First title provided
+    \noindent\textbf{Rappel~: \textit{(#1)}}%
+}%
+    \phantom{0} \\
 }
 {%
-    \vspace{1em}
+\vspace{1em}
 }
 
 
@@ -340,89 +352,89 @@ Prénom : \dotfill  $\quad$ Classe : \dotfill
 % Custom Environment for vocabulaire %% Not-Numbered
 \NewDocumentEnvironment{vocabulaire}{ o }
 {%
-    \IfNoValueTF{#1}%
-        {%
-            % No first title provided
-            \noindent\textbf{Vocabulaire~:}%
-        }%
-        {%
-            % First title provided
-            \noindent\textbf{Vocabulaire~: \textit{(#1)}}%
-        }%
-            \phantom{0} \\
+\IfNoValueTF{#1}%
+{%
+    % No first title provided
+    \noindent\textbf{Vocabulaire~:}%
+}%
+{%
+    % First title provided
+    \noindent\textbf{Vocabulaire~: \textit{(#1)}}%
+}%
+    \phantom{0} \\
 }
 {%
-    \vspace{1em}}
+\vspace{1em}}
 
 
 % Custom Environment for demonstration %% Not-Numbered
 \NewDocumentEnvironment{demonstration}{ o }
 {%
-    \IfNoValueTF{#1}%
-        {%
-            % No first title provided
-            \noindent\textbf{Démonstration~:}%
-        }%
-        {%
-            % First title provided
-            \noindent\textbf{Démonstration~: \textit{(#1)}}%
-        }%
-            \phantom{0} \\
+\IfNoValueTF{#1}%
+{%
+    % No first title provided
+    \noindent\textbf{Démonstration~:}%
+}%
+{%
+    % First title provided
+    \noindent\textbf{Démonstration~: \textit{(#1)}}%
+}%
+    \phantom{0} \\
 }
 {%
 \hfill $\square$
-    \vspace{1em}
+\vspace{1em}
 }
 
 % Custom Environment for Notation %% Not-Numbered
 \NewDocumentEnvironment{notation}{ o }
 {%
-    \IfNoValueTF{#1}%
-        {%
-            % No first title provided
-            \noindent\textbf{Notation~:}%
-        }%
-        {%
-            % First title provided
-            \noindent\textbf{Notation~: \textit{(#1)}}%
-        }%
-            \phantom{0} \\
+\IfNoValueTF{#1}%
+{%
+    % No first title provided
+    \noindent\textbf{Notation~:}%
+}%
+{%
+    % First title provided
+    \noindent\textbf{Notation~: \textit{(#1)}}%
+}%
+    \phantom{0} \\
 }
 {%
-    \vspace{1em}
+\vspace{1em}
 }
 
 
 % Custom Environment for exercises
 \NewDocumentEnvironment{exercice}{ O{6} o }
 {%
-    \refstepcounter{exercice}
-    \begin{tcolorbox}[
-    width=\linewidth-1cm,
-    colback=white, % Background color
-    colbacktitle=white,
-    colframe=black, % Border color
-    fonttitle=\bfseries,
-    coltitle=black,
-    boxrule=0.5mm,
-    sharp corners,
-    before=\vspace{1em},
-    after=\vspace{1em},
-    toprule=0.5mm, % Thickness of the top border
-    bottomrule=0.5mm, % Thickness of the bottom border
-    leftrule=0.5mm, % No left border
-    rightrule=0.5mm,
-    title=Exercice \theexercice~: \IfNoValueTF{#2}%
-        {%
-            % No first title provided
-            \textbf{}%
-        }%
-        {%
-            % First title provided
-            \textbf{\textit{(#2.)}}%
-        }% 
-        \hfill \diff{#1}
-    ]
+\refstepcounter{exercice}
+\begin{tcolorbox}[
+width=\linewidth-1cm,
+colback=white, % Background color
+colbacktitle=white,
+colframe=black, % Border color
+fonttitle=\bfseries,
+coltitle=black,
+boxrule=0.5mm,
+sharp corners,
+before=\vspace{1em},
+after=\vspace{1em},
+toprule=0.5mm, % Thickness of the top border
+bottomrule=0.5mm, % Thickness of the bottom border
+leftrule=0.5mm, % No left border
+rightrule=0.5mm,
+title=Exercice \theexercice~: \IfNoValueTF{#2}%
+{%
+    % No first title provided
+    \textbf{}%
+}%
+{%
+    % First title provided
+    \textbf{\textit{(#2.)}}%
+}% 
+\hfill \diff{#1}
+]
 }
 {%
 \end{tcolorbox}
@@ -430,34 +442,34 @@ Prénom : \dotfill  $\quad$ Classe : \dotfill
 
 \NewDocumentEnvironment{exercicedevoir}{ O{5} o }
 {%
-    \refstepcounter{exercicedevoir}
-    \begin{tcolorbox}[
-    width=\linewidth,
-    colback=white, % Background color
-    colbacktitle=white,
-    titlerule=0mm,
-    colframe=white, % Border color
-    fonttitle=\bfseries,
-    coltitle=black,
-    boxrule=0.5mm,
-    sharp corners,
-    before=\vspace{1em},
-    after=\vspace{1em},
-    toprule=-0.5mm, % Thickness of the top border
-    bottomrule=-0.5mm, % Thickness of the bottom border
-    leftrule=0.5mm, % No left border
-    rightrule=-0.5mm,
-    title=Exercice \theexercicedevoir~: \IfNoValueTF{#2}%
-        {%
-            % No first title provided
-            \textbf{}%
-        }%
-        {%
-            % First title provided
-            \textbf{\textit{(#2.)}}%
-        }% 
-        \hfill \textbf{\small \ldots~/ #1 points}
-    ]
+\refstepcounter{exercicedevoir}
+\begin{tcolorbox}[
+width=\linewidth,
+colback=white, % Background color
+colbacktitle=white,
+titlerule=0mm,
+colframe=white, % Border color
+fonttitle=\bfseries,
+coltitle=black,
+boxrule=0.5mm,
+sharp corners,
+before=\vspace{1em},
+after=\vspace{1em},
+toprule=-0.5mm, % Thickness of the top border
+bottomrule=-0.5mm, % Thickness of the bottom border
+leftrule=0.5mm, % No left border
+rightrule=-0.5mm,
+title=Exercice \theexercicedevoir~: \IfNoValueTF{#2}%
+{%
+    % No first title provided
+    \textbf{}%
+}%
+{%
+    % First title provided
+    \textbf{\textit{(#2.)}}%
+}% 
+\hfill \textbf{\small \ldots~/ #1 points}
+]
 }
 {%
 \end{tcolorbox}
@@ -466,16 +478,16 @@ Prénom : \dotfill  $\quad$ Classe : \dotfill
 % Section
 \RequirePackage{titlesec}
 \titleformat{\section}
-  {\normalfont\Large\bfseries} % Format for the section title
-  {\Roman{section} -}          % Section number format (Roman numeral followed by a dash)
-  {0.5em}                         % Space between number and title
-  {}     
+{\normalfont\Large\bfseries} % Format for the section title
+{\Roman{section} -}          % Section number format (Roman numeral followed by a dash)
+{0.5em}                         % Space between number and title
+{}     
 
 \titleformat{\subsection}
-  {\normalfont\large\bfseries} % Format for the subsection title
-  {\arabic{subsection} - }             % Subsection number
-  {.5em}                         % Space between number and title
-  {}                            % Code before title
+{\normalfont\large\bfseries} % Format for the subsection title
+{\arabic{subsection} - }             % Subsection number
+{.5em}                         % Space between number and title
+{}                            % Code before title
 
 % New lists
 \RequirePackage{enumitem}
@@ -483,26 +495,26 @@ Prénom : \dotfill  $\quad$ Classe : \dotfill
 \setlist[enu,1]{label=(\alph*),left=1em}
 
 \newenvironment{enuspaced}
-  {%
-    \vspace{-0.5cm} % Vertical space before the list
-    \begin{enu}
-  }
-  {%
-    \end{enu}
-  }
+{%
+\vspace{-0.5cm} % Vertical space before the list
+\begin{enu}
+}
+{%
+\end{enu}
+}
 
 % New command title
 \def\thetitle{\@title}
 \def\theauthor{\@author}
 \def\thedate{\@date}
 \renewcommand{\maketitle}{
-    \begin{center}
-        {\Huge \bfseries \thetitle \par}
-        \vspace{1cm}
-        {\Large \textit{\theauthor} \par}
-        \vspace{1cm}
-        {\large \the\year \par}
-    \end{center}
+\begin{center}
+{\Huge \bfseries \thetitle \par}
+\vspace{1cm}
+{\Large \textit{\theauthor} \par}
+\vspace{1cm}
+{\large \the\year \par}
+\end{center}
 }
 
 % Begin expl3 code
@@ -523,9 +535,9 @@ Prénom : \dotfill  $\quad$ Classe : \dotfill
 
 % Define the academic year command
 \newcommand{\academicyear}{
-  \int_compare:nNnTF {\l_my_month_int} < 8
-    { \int_use:N \l_my_previous_year_int - \int_use:N \l_my_year_int }
-    { \int_use:N \l_my_year_int - \int_use:N \l_my_next_year_int }
+\int_compare:nNnTF {\l_my_month_int} < 8
+{ \int_use:N \l_my_previous_year_int - \int_use:N \l_my_year_int }
+{ \int_use:N \l_my_year_int - \int_use:N \l_my_next_year_int }
 }
 
 \ExplSyntaxOff
@@ -548,22 +560,22 @@ Prénom : \dotfill  $\quad$ Classe : \dotfill
 
 %Custom Verbatim mode with listing            
 \lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},   
-    commentstyle=\color{codegreen},
-    keywordstyle=\color{magenta},
-    numberstyle=\tiny\color{codegray},
-    stringstyle=\color{codepurple},
-    basicstyle=\ttfamily\footnotesize,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=left,                    
-    numbersep=5pt,                  
-    showspaces=false,                
-    showstringspaces=false,
-    showtabs=false,                  
-    tabsize=2
+backgroundcolor=\color{backcolour},   
+commentstyle=\color{codegreen},
+keywordstyle=\color{magenta},
+numberstyle=\tiny\color{codegray},
+stringstyle=\color{codepurple},
+basicstyle=\ttfamily\footnotesize,
+breakatwhitespace=false,         
+breaklines=true,                 
+captionpos=b,                    
+keepspaces=true,                 
+numbers=left,                    
+numbersep=5pt,                  
+showspaces=false,                
+showstringspaces=false,
+showtabs=false,                  
+tabsize=2
 }
 
 \lstset{style=mystyle}
