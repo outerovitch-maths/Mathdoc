@@ -56,19 +56,6 @@
 
 \newcommand{\school}{CSMH}
 
-\newcommand{\mydivision}[3]{%
-\begin{center}
-\scalebox{#3}{
-\[
-\begin{array}{r|l}
-#1 & #2 \\
-\cline{2-2} \\ & \\ & \\ & \\ &
-\end{array}%
-\]
-}
-\end{center}
-}
-
 \newcommand{\nonewpage}{\let\clearpage\relax}
 
 \newcommand\EXO[1]{
@@ -187,6 +174,18 @@ Prénom : \dotfill  $\quad$ Classe : \dotfill
 \newcommand\trou[1]{\small ~~.~ }
 \newcommand{\monaddition}[2]{\opadd[voperation=top,resultstyle=\montrou,carryadd=false]{#1}{#2}}
 \newcommand{\masoustraction}[2]{\opsub[voperation=top,resultstyle=\montrou,carryadd=false]{#1}{#2}}
+\newcommand{\mydivision}[3]{%
+\begin{center}
+\scalebox{#3}{
+\[
+\begin{array}{r|l}
+#1 & #2 \\
+\cline{2-2} \\ & \\ & \\ & \\ &
+\end{array}%
+\]
+}
+\end{center}
+}
 
 % Set Counters 
 \newcounter{exercice}
