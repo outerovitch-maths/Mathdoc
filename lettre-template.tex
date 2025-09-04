@@ -1,36 +1,58 @@
 \documentclass{article}
-\usepackage{graphicx}
+% Classe de document basique pour articles, lettres, etc.
+\usepackage[utf8]{inputenc}
+% Encodage UTF-8 pour écrire directement les caractères accentués
+\usepackage[T1]{fontenc}
+% Encodage de sortie amélioré pour une meilleure gestion des accents
+\usepackage[french]{babel}
+% Adaptation de la langue : césure, typographie etc.
+\usepackage{microtype}
+% Amélioration automatique de la typographie
 \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
-\linespread{1.2}
+% Marges de page réglées précisément à 2 cm de chaque côté
+\linespread{1.2} 
+% Interlignage augmenté
 \setlength{\parskip}{0.5em}
+% Espacement vertical entre paragraphes
 \pagestyle{empty}
+% Supprime numéros et en-têtes/pieds de page par défaut
+\usepackage{graphicx}
+% Gestion des images pour la signature
 \usepackage{ragged2e}
+% Commandes avancées pour alignement (justifié, droite, gauche)
 \usepackage{lipsum}
+% Insertion de texte factice pour template
 
 \begin{document}
 
 %%PAGE DESTINATAIRE
-\phantom{0}
-\vspace{7cm}
+\vspace*{\fill}
+\noindent\makebox[\textwidth][c]{%
+\begin{minipage}{0.5\textwidth}
+\raggedright{ 
+{\LARGE \textbf{À l’attention de} Destinataire} \\[1cm]
+{\LARGE Adresse 1} \\[1cm]
+{\LARGE Adresse 2} \\[1cm]
+{\LARGE CP - Ville, PAYS}
+}
+\end{minipage}%
+}
+\vspace*{\fill}
 
-\raggedright{
-\hspace{3cm}  {\LARGE \textbf{À l’attention de}} \\ \vspace{1cm}
-\hspace{3cm}  {\LARGE Adresse 1} \\ \vspace{1cm}
-\hspace{3cm}  {\LARGE Adresse 2} \\ \vspace{1cm}
-\hspace{3cm}  {\LARGE CP - Ville, PAYS} \\ \vspace{1cm}}
-
+%%PAGE DE GARDE
 \newpage
-\phantom{00}
+\thispagestyle{empty}
+\null
 \newpage
 
 %%EXPEDITEUR
 \raggedright{
-    Colin \textsc{Outerovitch} \\
-    Yoff Apecsy 2, N920, 106 Yoff \\
-    11500, Dakar, \textsc{Sénégal} \\
-   +221-76-687-10-06 \\
-   +33-06-33-98-39-87 \\
-    \texttt{outero.co@gmail.com} \\
+Colin \textsc{Outerovitch} \\
+Yoff Apecsy 2, N920, 106 Yoff \\
+11500, Dakar, \textsc{Sénégal} \\
++221-76-687-10-06 \\
++33-06-33-98-39-87 \\
+\texttt{outero.co@gmail.com} \\
 }
 
 %%DESTINATAIRE
@@ -38,15 +60,18 @@
 \textbf{À l’attention de} Destinataire\\
 Adresse 1 \\
 Adresse 2  \\
-CP - Ville, PAYS \\ \vspace{.5cm}}
+CP - Ville, PAYS \\ \vspace{.5cm}
+}
 
-%%OBJET
-\raggedright{\textbf{\underline{Objet} : Objet}} \bigskip
-
-%%SALUTATIONS
-Madame, Monsieur, \bigskip
 
 \justifying
+%%OBJET
+\vspace{1em}
+\noindent\textbf{\underline{Objet}~:} \quad Objet
+\vspace{1em}
+
+%%SALUTATIONS
+\noindent Madame, Monsieur, \bigskip
 
 %%CORPS DE LA LETTRE
 \lipsum[2] \smallskip
@@ -57,11 +82,9 @@ Madame, Monsieur, \bigskip
 
 \lipsum[2] \\
 
-\lipsum[2] \smallskip
+\lipsum[2] \bigskip
 
-
-
-%%POLITESSES
+%%FORMULE DE POLITESSE
 Dans l’attente d’un retour de votre part, je vous prie
 d’agréer, Madame, Monsieur, l’expression de mes salutations
 distinguées.
@@ -72,9 +95,3 @@ distinguées.
 }
 
 \end{document}
-
-% Local Variables:
-% gptel-model: deepseek-chat
-% gptel--backend-name: "DeepSeek"
-% gptel--bounds: ((response (2886 2893) (2899 2942) (3012 3019) (3025 3068)))
-% End:
