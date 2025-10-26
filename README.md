@@ -28,7 +28,7 @@ Alternatively, you can download the `.sty` file directly.
 2. Refresh the file database by running `texhash` in your TeX distribution command prompt.
 
 #### Linux
-1. Place `mathdoc.sty` in your working directory or in the appropriate TeX directory (e.g., `/usr/local/texlive/texmf-local/tex/latex/mathdoc/`).
+1. Place `mathdoc.sty` in your working directory or in the appropriate TeX directory (e.g., `TEMPLATES_PATH="$HOME/texmf/tex/latex/Mathdoc"`).
 2. Run `sudo texhash` to refresh the file database.
 
 #### macOS
