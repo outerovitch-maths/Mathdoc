@@ -1,0 +1,2102 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.10.25)  26 OCT 2025 08:56
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**mathdoc.sty
+(./mathdoc.sty
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
+
+LaTeX Warning: You have requested package `',
+               but the package provides `Mathdoc'.
+
+Package: Mathdoc 13/12/2024 v1.8 A package for formatting math exercises
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen140
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen141
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count185
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count186
+\leftroot@=\count187
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count188
+\DOTSCASE@=\count189
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen142
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count190
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count191
+\dotsspace@=\muskip16
+\c@parentequation=\count192
+\dspbrk@lvl=\count193
+\tag@help=\toks17
+\row@=\count194
+\column@=\count195
+\maxfields@=\count196
+\andhelp@=\toks18
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks19
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2023/03/17 version 6.0.3 text color boxes
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks21
+\pgfutil@tempdima=\dimen149
+\pgfutil@tempdimb=\dimen150
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box53
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex
+\pgfkeys@tmptoks=\toks25
+))
+\pgf@x=\dimen153
+\pgf@y=\dimen154
+\pgf@xa=\dimen155
+\pgf@ya=\dimen156
+\pgf@xb=\dimen157
+\pgf@yb=\dimen158
+\pgf@xc=\dimen159
+\pgf@yc=\dimen160
+\pgf@xd=\dimen161
+\pgf@yd=\dimen162
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count197
+\c@pgf@countb=\count198
+\c@pgf@countc=\count199
+\c@pgf@countd=\count266
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+\pgf@sys@id@count=\count267
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count268
+\pgfsyssoftpath@bigbuffer@items=\count269
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen163
+\pgfmath@count=\count270
+\pgfmath@box=\box54
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count271
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen164
+\pgf@picmaxx=\dimen165
+\pgf@picminy=\dimen166
+\pgf@picmaxy=\dimen167
+\pgf@pathminx=\dimen168
+\pgf@pathmaxx=\dimen169
+\pgf@pathminy=\dimen170
+\pgf@pathmaxy=\dimen171
+\pgf@xx=\dimen172
+\pgf@xy=\dimen173
+\pgf@yx=\dimen174
+\pgf@yy=\dimen175
+\pgf@zx=\dimen176
+\pgf@zy=\dimen177
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen178
+\pgf@path@lasty=\dimen179
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen180
+\pgf@shorten@start@additional=\dimen181
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box55
+\pgf@hbox=\box56
+\pgf@layerbox@main=\box57
+\pgf@picture@serial@count=\count272
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen182
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen183
+\pgf@pt@y=\dimen184
+\pgf@pt@temp=\dimen185
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen186
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen187
+\pgf@sys@shading@range@num=\count273
+\pgf@shadingcount=\count274
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box58
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box59
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen188
+\pgf@nodesepend=\dimen189
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks32
+\verbatim@line=\toks33
+\verbatim@in@stream=\read3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count275
+)
+\tcb@titlebox=\box60
+\tcb@upperbox=\box61
+\tcb@lowerbox=\box62
+\tcb@phantombox=\box63
+\c@tcbbreakpart=\count276
+\c@tcblayer=\count277
+\c@tcolorbox@number=\count278
+\tcb@temp=\box64
+\tcb@temp=\box65
+\tcb@temp=\box66
+\tcb@temp=\box67
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mnsymbol/MnSymbol.sty
+Package: MnSymbol 2007/01/21 v1.4 support for the MnSymbol font
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+LaTeX Info: Redefining \dagger on input line 84.
+LaTeX Info: Redefining \ddagger on input line 84.
+LaTeX Info: Redefining \mathparagraph on input line 84.
+LaTeX Info: Redefining \mathsection on input line 84.
+LaTeX Info: Redefining \mathdollar on input line 84.
+LaTeX Info: Redefining \mathsterling on input line 84.
+LaTeX Info: Redefining \yen on input line 84.
+LaTeX Info: Redefining \circledR on input line 84.
+LaTeX Info: Redefining \circledS on input line 84.
+LaTeX Info: Redefining \Re on input line 84.
+LaTeX Info: Redefining \Im on input line 84.
+LaTeX Info: Redefining \dotplus on input line 84.
+LaTeX Info: Redefining \thicksim on input line 84.
+LaTeX Info: Redefining \thickapprox on input line 84.
+LaTeX Info: Redefining \veebar on input line 84.
+LaTeX Info: Redefining \barwedge on input line 84.
+LaTeX Info: Redefining \doublebarwedge on input line 84.
+LaTeX Info: Redefining \centerdot on input line 84.
+LaTeX Info: Redefining \divideontimes on input line 84.
+\symMnSyA=\mathgroup6
+\symMnSyB=\mathgroup7
+\symMnSyC=\mathgroup8
+\symMnSyD=\mathgroup9
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 119.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/MnSymbolE/m/n on input line 119.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/MnSymbolE/m/n on input line 119.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 120.
+LaTeX Font Info:    Encoding `OMS' has changed to `U' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> U/MnSymbolF/m/n on input line 120.
+LaTeX Font Info:    Encoding `OMS' has changed to `U' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> U/MnSymbolF/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `MnSyA' in version `bold'
+(Font)                  U/MnSymbolA/m/n --> U/MnSymbolA/b/n on input line 121.
+LaTeX Font Info:    Overwriting symbol font `MnSyB' in version `bold'
+(Font)                  U/MnSymbolB/m/n --> U/MnSymbolB/b/n on input line 122.
+LaTeX Font Info:    Overwriting symbol font `MnSyC' in version `bold'
+(Font)                  U/MnSymbolC/m/n --> U/MnSymbolC/b/n on input line 123.
+LaTeX Font Info:    Overwriting symbol font `MnSyD' in version `bold'
+(Font)                  U/MnSymbolD/m/n --> U/MnSymbolD/b/n on input line 124.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/MnSymbolE/m/n --> OMX/MnSymbolE/b/n on input line 1
+25.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  U/MnSymbolF/m/n --> U/MnSymbolF/b/n on input line 126.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 241.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
+(Font)                  OMS/MnSymbolS/m/n --> OMS/MnSymbolS/b/n on input line 2
+41.
+LaTeX Info: Redefining \longrightarrow on input line 548.
+LaTeX Info: Redefining \longleftarrow on input line 549.
+LaTeX Info: Redefining \longleftrightarrow on input line 550.
+LaTeX Info: Redefining \Longrightarrow on input line 551.
+LaTeX Info: Redefining \Longleftarrow on input line 552.
+LaTeX Info: Redefining \Longleftrightarrow on input line 553.
+LaTeX Info: Redefining \longmapsto on input line 554.
+LaTeX Info: Redefining \vdots on input line 868.
+LaTeX Font Info:    Redeclaring math symbol \braceld on input line 1721.
+LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 1722.
+LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 1723.
+LaTeX Font Info:    Redeclaring math symbol \braceru on input line 1724.
+LaTeX Info: Redefining \downbracefill on input line 1799.
+LaTeX Info: Redefining \upbracefill on input line 1800.
+LaTeX Info: Redefining \overbrace on input line 1819.
+LaTeX Info: Redefining \underbrace on input line 1820.
+LaTeX Info: Redefining \surd on input line 1843.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 1845.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 1846.
+LaTeX Font Info:    Redeclaring math accent \vec on input line 1848.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-22 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count279
+\l__pdf_internal_box=\box68
+))
+Package: xparse 2023-02-02 L3 Experimental document command parser
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip51
+\enit@outerparindent=\dimen190
+\enit@toks=\toks34
+\enit@inbox=\box69
+\enit@count@id=\count280
+
+/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty:1084: Undefined c
+ontrol sequence.
+<argument> \scriptsize 
+                       
+l.1084 \SetEnumitemSize{script}\scriptsize
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty:1085: Undefined c
+ontrol sequence.
+<argument> \tiny 
+                 
+l.1085 \SetEnumitemSize{tiny}\tiny
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty:1086: Undefined c
+ontrol sequence.
+<argument> \footnotesize 
+                         
+l.1086 \SetEnumitemSize{footnote}\footnotesize
+                                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty:1087: Undefined c
+ontrol sequence.
+<argument> \small 
+                  
+l.1087 \SetEnumitemSize{small}\small
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty:1088: LaTeX Error
+: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1088 \SetEnumitemSize{normal}\normalsize
+                                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty:1089: Undefined c
+ontrol sequence.
+<argument> \large 
+                  
+l.1089 \SetEnumitemSize{large}\large
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty:1090: Undefined c
+ontrol sequence.
+<argument> \Large 
+                  
+l.1090 \SetEnumitemSize{Large}\Large
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty:1091: Undefined c
+ontrol sequence.
+<argument> \LARGE 
+                  
+l.1091 \SetEnumitemSize{LARGE}\LARGE
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty:1092: Undefined c
+ontrol sequence.
+<argument> \huge 
+                 
+l.1092 \SetEnumitemSize{huge}\huge
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty:1093: Undefined c
+ontrol sequence.
+<argument> \Huge 
+                 
+l.1093 \SetEnumitemSize{Huge}\Huge
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\enitdp@description=\count281
+
+/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty:1833: LaTeX Error
+: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1833 \renewenvironment{description}
+                                     [1][]
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box70
+\beforetitleunit=\skip52
+\aftertitleunit=\skip53
+\ttl@plus=\dimen191
+\ttl@minus=\dimen192
+\ttl@toksa=\toks35
+\titlewidth=\dimen193
+\titlewidthlast=\dimen194
+\titlewidthfirst=\dimen195
+
+
+Package titlesec Warning: Non standard sectioning command \section
+(titlesec)                detected. Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command \subsection
+(titlesec)                detected. Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command \subsubsection
+(titlesec)                detected. Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command \paragraph
+(titlesec)                detected. Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command \subparagraph
+(titlesec)                detected. Using default spacing and no format.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language85
+LaTeX Info: Redefining \_ on input line 43.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks36
+\inpenc@posthook=\toks37
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tex-gyre/tgschola.sty
+Package: tgschola 2009/09/27 v1.2 TeX Gyre Schola as default roman family
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+\c@tracingmulticols=\count282
+\mult@box=\box71
+\multicol@leftmargin=\dimen196
+\c@unbalance=\count283
+\c@collectmore=\count284
+\doublecol@number=\count285
+\multicoltolerance=\count286
+\multicolpretolerance=\count287
+\full@width=\dimen197
+\page@free=\dimen198
+\premulticols=\dimen199
+\postmulticols=\dimen256
+\multicolsep=\skip54
+\multicolbaselineskip=\skip55
+\partial@page=\box72
+\last@line=\box73
+\maxbalancingoverflow=\dimen257
+\mult@rightbox=\box74
+\mult@grightbox=\box75
+\mult@firstbox=\box76
+\mult@gfirstbox=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\c@minrows=\count288
+\c@columnbadness=\count289
+\c@finalcolumnbadness=\count290
+\last@try=\dimen258
+\multicolovershoot=\dimen259
+\multicolundershoot=\dimen260
+\mult@nat@firstbox=\box114
+\colbreak@box=\box115
+\mc@col@check@num=\count291
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip56
+\multirow@cntb=\count292
+\multirow@dima=\skip57
+\bigstrutjot=\dimen261
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen262
+\ar@mcellbox=\box116
+\extrarowheight=\dimen263
+\NC@list=\toks38
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box117
+)
+\TX@col@width=\dimen264
+\TX@old@table=\dimen265
+\TX@old@col=\dimen266
+\TX@target=\dimen267
+\TX@delta=\dimen268
+\TX@cols=\count293
+\TX@ftn=\toks39
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count294
+\decimalpart=\count295
+)
+Package: xstring 2023/01/14 v1.85 String manipulations (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xlop/xlop.sty
+Package: xlop 2020/04/26 package wrapper for xlop.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/xlop/xlop.tex
+\op@count@z=\count296
+\op@count@i=\count297
+\op@count@ii=\count298
+\op@count@iii=\count299
+\op@count@iv=\count300
+\op@count@v=\count301
+\op@count@vi=\count302
+\op@nbop=\count303
+\op@currentstyle=\toks40
+
+`xlop' v0.28  <2020/11/11> (jcc)
+\opcolumnwidth=\dimen269
+\oplineheight=\dimen270
+\op@strutbox=\box118
+\op@decimalsepwidth=\dimen271
+\op@decimalsepoffset=\dimen272
+\op@hrulewidth=\dimen273
+\op@vrulewidth=\dimen274
+\op@parenthesis=\count304
+\op@token=\count305
+\op@stack=\count306
+\op@stackb=\count307
+)) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count308
+\Gm@cntv=\count309
+\c@Gm@tempcnt=\count310
+\Gm@bindingoffset=\dimen275
+\Gm@wd@mp=\dimen276
+\Gm@odd@mp=\dimen277
+\Gm@even@mp=\dimen278
+\Gm@layoutwidth=\dimen279
+\Gm@layoutheight=\dimen280
+\Gm@layouthoffset=\dimen281
+\Gm@layoutvoffset=\dimen282
+\Gm@dimlist=\toks41
+
+/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty:1003: Missing \en
+dcsname inserted.
+<to be read again> 
+                   \@classoptionslist 
+l.1003 \ProcessOptionsKV[c]{Gm}
+                               %
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty:1006: Package geo
+metry Error: \paperwidth (0.0pt) too short.
+
+See the geometry package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1006 \Gm@process
+                  
+Set a paper type (e.g., `a4paper').
+
+
+/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty:1006: Package geo
+metry Error: \paperheight (0.0pt) too short.
+
+See the geometry package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1006 \Gm@process
+                  
+Set a paper type (e.g., `a4paper').
+
+
+Package geometry Warning: `width' results in NEGATIVE (-56.90549pt).
+    `lmargin' or `rmargin' should be shortened in length.
+
+
+Package geometry Warning: `height' results in NEGATIVE (-99.58463pt).
+    `tmargin' or `bmargin' should be shortened in length.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count311
+\calc@Bcount=\count312
+\calc@Adimen=\dimen283
+\calc@Bdimen=\dimen284
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count313
+\calc@Cskip=\skip62
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count314
+\l_MT_multwidth_dim=\dimen285
+\origjot=\skip63
+\l_MT_shortvdotswithinadjustabove_dim=\dimen286
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen287
+\l_MT_above_intertext_sep=\dimen288
+\l_MT_below_intertext_sep=\dimen289
+\l_MT_above_shortintertext_sep=\dimen290
+\l_MT_below_shortintertext_sep=\dimen291
+\xmathstrut@box=\box119
+\xmathstrut@dim=\dimen292
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup10
+\symboldletters=\mathgroup11
+\symboldsymbols=\mathgroup12
+\symboldlargesymbols=\mathgroup13
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/diagbox/diagbox.sty
+Package: diagbox 2020/02/09 v2.3 Making table heads with diagonal lines
+
+(/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 112.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks42
+\@arclen=\dimen293
+\@arcrad=\dimen294
+\pIIe@tempdima=\dimen295
+\pIIe@tempdimb=\dimen296
+\pIIe@tempdimc=\dimen297
+\pIIe@tempdimd=\dimen298
+\pIIe@tempdime=\dimen299
+\pIIe@tempdimf=\dimen300
+)
+\diagbox@boxa=\box120
+\diagbox@boxb=\box121
+\diagbox@boxm=\box122
+\diagbox@wd=\dimen301
+\diagbox@ht=\dimen302
+\diagbox@insepl=\dimen303
+\diagbox@insepr=\dimen304
+\diagbox@outsepl=\dimen305
+\diagbox@outsepr=\dimen306
+)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen307
+\pgffor@skip=\dimen308
+\pgffor@stack=\toks43
+\pgffor@toks=\toks44
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count315
+\pgfplotmarksize=\dimen309
+)
+\tikz@lastx=\dimen310
+\tikz@lasty=\dimen311
+\tikz@lastxsaved=\dimen312
+\tikz@lastysaved=\dimen313
+\tikz@lastmovetox=\dimen314
+\tikz@lastmovetoy=\dimen315
+\tikzleveldistance=\dimen316
+\tikzsiblingdistance=\dimen317
+\tikz@figbox=\box123
+\tikz@figbox@bg=\box124
+\tikz@tempbox=\box125
+\tikz@tempbox@bg=\box126
+\tikztreelevel=\count316
+\tikznumberofchildren=\count317
+\tikznumberofcurrentchild=\count318
+\tikz@fig@count=\count319
+LaTeX Font Info:    Trying to load font information for T1+qcs on input line 11
+96.
+ (/usr/share/texlive/texmf-dist/tex/latex/tex-gyre/t1qcs.fd
+File: t1qcs.fd 2009/09/25 v1.2 font definition file for T1/qcs
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count320
+\pgfmatrixcurrentcolumn=\count321
+\pgf@matrix@numberofcolumns=\count322
+)
+\tikz@expandcount=\count323
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-euclide.sty
+2023/02/03 5.02c tkz-euclide.sty
+Package: tkz-euclide  2023/02/03 5.02c for pure Euclidean Geometry 
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryangles.code.tex
+File: tikzlibraryangles.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen318
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
+code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen319
+\pgfarrowlength=\dimen320
+\pgfarrowwidth=\dimen321
+\pgfarrowlinewidth=\dimen322
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@layerbox@background=\box127
+\pgf@layerboxsaved@background=\box128
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex
+\pgfdecoratedcompleteddistance=\dimen323
+\pgfdecoratedremainingdistance=\dimen324
+\pgfdecoratedinputsegmentcompleteddistance=\dimen325
+\pgfdecoratedinputsegmentremainingdistance=\dimen326
+\pgf@decorate@distancetomove=\dimen327
+\pgf@decorate@repeatstate=\count324
+\pgfdecorationsegmentamplitude=\dimen328
+\pgfdecorationsegmentlength=\dimen329
+)
+\tikz@lib@dec@box=\box129
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.markings.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.markings.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.shapes.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.shapes.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.text.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.text.code.tex
+\pgf@lib@dec@text@box=\box130
+)
+\tikz@lib@dec@te@box=\box131
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryintersections.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersection
+s.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)
+\pgf@intersect@solutions=\count325
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfpu.code.tex)
+\tikz@math@for@depth=\count326
+\tikz@math@dimen=\dimen330
+\tikz@math@toks=\toks45
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarythrough.code.tex
+File: tikzlibrarythrough.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
+Package: xfp 2023-02-02 L3 Floating point unit
+)
+
+/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-euclide.sty:149: LaTeX 
+Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 }
+       
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-euclide.sty:149: Undefi
+ned control sequence.
+<argument> ...fp} \usepackage {xpatch} \xpatchcmd 
+                                                  \pgfmathreciprocal@@ {\pgf...
+l.149 }
+       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Runaway argument?
+{\pgfmath@y .1\pgfmath@y \pgfmath@y .1\pgfmath@y \pgfmath@y .1\pgfmath@y \ETC.
+/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-euclide.sty:149: Paragr
+aph ended before \pgfmathreciprocal@@ was complete.
+<to be read again> 
+                   \par 
+l.149 }
+       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+\tkzRadius=\dimen331
+\tkzLength=\dimen332
+\tkz@radi=\dimen333
+\tkz@ax=\dimen334
+\tkz@ay=\dimen335
+\tkz@bx=\dimen336
+\tkz@by=\dimen337
+\tkz@cx=\dimen338
+\tkz@cy=\dimen339
+\tkz@dx=\dimen340
+\tkz@dy=\dimen341
+\tkz@cntmk=\count327
+Local configuration file tkz-euclide.cfg found and used
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-euclide.cfg
+2023/02/03 5.02c tkz-euclide.cfg
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-base.tex
+2023/02/03 5.02c tkz-tools-eu-base.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-utilities.tex
+2023/02/03 5.02c tkz-tools-eu-utilities.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-BB.tex
+2023/02/03 5.02c tkz-obj-eu-BB.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-grids.tex
+2023/02/03 5.02c tkz-obj-eu-grids.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-lib-eu-marks.tex
+2023/02/03 5.02c tkz-lib-eu-marks.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-text.tex
+2023/02/03 5.02c tkz-tools-eu-text.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-lib-eu-shape.tex
+2023/02/03 5.02c tkz-lib-eu-shape.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-axesmin.tex
+2023/02/03 5.02c tkz-obj-eu-axesmin
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-colors.tex
+2023/02/03 5.02c tkz-tools-eu-colors
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-points.tex
+2023/02/03 5.02c tkz-obj-eu-points.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-draw-eu-points.tex
+2023/01/24 5.01c tkz-draw-points.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-points.tex
+2023/02/03 5.02c tkz-obj-eu-points.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-points-by.tex
+2023/02/03 5.02c tkz-tools-eu-points-by.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-math.tex
+2023/02/03 5.02c tkz-tools-eu-math.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-intersections
+.tex
+2023/02/03 5.02c tkz-tools-eu-intersections.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-points-with.tex
+2023/02/03 5.02c tkz-obj-eu-points-with.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-points-spc.tex
+2023/02/03 5.02c tkz-obj-el-points.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-tools-eu-angles.tex
+2023/02/03 5.02c tkz-tools-eu-angles.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-points-rnd.tex
+2023/02/03 5.02c tkz-obj-eu-points-rnd.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-circles.tex
+2023/02/03 5.02c tkz-obj-eu-circles.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-circles-by.tex
+2023/02/03 5.02c tkz-obj-eu-circles.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-lines.tex
+2023/02/03 5.02c tkz-obj-eu-lines.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-polygons.tex
+2023/02/03 5.02c tkz-obj-eu-polygons.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-triangles.tex
+2023/02/03 5.02c tkz-obj-eu-triangles.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-draw-eu-lines.tex
+2023/02/03 5.02c tkz-obj-eu-draw-lines.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-draw-eu-circles.tex
+2023/02/03 5.02c tkz-obj-eu-draw-circles.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-draw-eu-polygons.tex
+2023/02/03 5.02c tkz-obj-eu-polygons.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-draw-eu-angles.tex
+2023/02/03 5.02c tkz-tool-eu-angles.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-draw-eu-sectors.tex
+2023/02/03 5.02c tkz-obj-eu-sectors.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-draw-eu-compass.tex
+2023/02/03 5.02c tkz-obj-eu-compass.tex
+) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-draw-eu-show.tex
+2023/02/03 5.02c tkz-obj-eu-show.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-draw-eu-protractor.tex
+2023/02/03 5.02c tkz-obj-eu-protractor.tex
+)) (/usr/share/texlive/texmf-dist/tex/latex/scalerel/scalerel.sty
+Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchi
+ng of objects, relative to a reference object or in absolute terms
+
+
+/usr/share/texlive/texmf-dist/tex/latex/scalerel/scalerel.sty:55: LaTeX Error: 
+\usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \usepackage{
+                 calc}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/scalerel/scalerel.sty:56: LaTeX Error: 
+\usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \usepackage{
+                 graphicx}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/scalerel/scalerel.sty:57: LaTeX Error: 
+\usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \usepackage{
+                 etoolbox}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+\thesrwidth=\skip64
+\thesrheight=\skip65
+\srblobheight=\skip66
+\srblobdepth=\skip67
+\mnxsrwidth=\skip68
+\LMex=\skip69
+\LMpt=\skip70
+) (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write4
+
+Excluding comment 'comment')
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
+Package: titletoc 2021/07/05 v2.14 TOC entries
+\ttl@leftsep=\dimen342
+
+/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty:581: Undefined co
+ntrol sequence.
+l.581 \@tempskipa\@pnumwidth
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty:582: Missing numb
+er, treated as zero.
+<to be read again> 
+                   \edef 
+l.582 \edef
+           \@pnumwidth{\the\@tempskipa}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty:582: Illegal unit
+ of measure (pt inserted).
+<to be read again> 
+                   \edef 
+l.582 \edef
+           \@pnumwidth{\the\@tempskipa}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty:583: Undefined co
+ntrol sequence.
+l.583 \advance\@tempskipa-\@tocrmarg
+                                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty:584: Missing numb
+er, treated as zero.
+<to be read again> 
+                   \edef 
+l.584 \edef
+           \ttl@corr{-\the\@tempskipa}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty:584: Illegal unit
+ of measure (pt inserted).
+<to be read again> 
+                   \edef 
+l.584 \edef
+           \ttl@corr{-\the\@tempskipa}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+) (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count328
+\l__lipsum_a_int=\count329
+\l__lipsum_b_int=\count330
+
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip71
+\f@nch@O@elh=\skip72
+\f@nch@O@erh=\skip73
+\f@nch@O@olh=\skip74
+\f@nch@O@orh=\skip75
+\f@nch@O@elf=\skip76
+\f@nch@O@erf=\skip77
+\f@nch@O@olf=\skip78
+\f@nch@O@orf=\skip79
+)
+(/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty
+Package: ProfLycee 2023/03/11 2.5.4 Aide pour l'utilisation de LaTeX en lycee
+
+
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:43: LaTeX Error
+: Option clash for package xcolor.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 \RequirePackage
+                    {tikz}
+The package xcolor has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [table,svgnames]
+Adding the global options:
+  ,table,svgnames
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-tab/tkz-tab.sty
+Package: tkz-tab 2020/04/29 v2.12c variations (ctan version)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks46
+\XKV@tempa@toks=\toks47
+)
+\XKV@depth=\count331
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)
+
+/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty:58: Package xkeyval
+ Error: xkeyval loaded before \documentclass.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...yval loaded before \protect\documentclass}
+                                                  %
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.cod
+e.tex
+File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+\tkz@XF=\dimen343
+\tkz@YF=\dimen344
+\c@tkz@cnt@line=\count332
+\c@tkz@cnt@lg=\count333
+\c@tkz@cnt@cl=\count334
+\c@tkz@cnt@pred=\count335
+\c@tkz@cnt@temp=\count336
+\c@tkz@cnt@arrow=\count337
+\c@tkz@cnt@zone=\count338
+\c@tkz@cnt@lgnext=\count339
+\c@tkz@cnt@clnext=\count340
+\c@tkz@cnt@pair=\count341
+\c@tkz@cnt@impair=\count342
+\c@tkz@cnt@aw=\count343
+) (/usr/share/texlive/texmf-dist/tex/generic/xint/xintexpr.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xint/xintfrac.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xint/xint.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xint/xintcore.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xint/xintkernel.sty
+Package: xintkernel 2022/06/10 v1.4m Paraphernalia for the xint packages (JFB)
+\xint_c_ii^xiv=\count344
+\xint_c_ii^xxi=\count345
+)
+Package: xintcore 2022/06/10 v1.4m Expandable arithmetic on big integers (JFB)
+\xint_c_x^viii=\count346
+\xint_c_x^ix=\count347
+\xint_c_x^viii_mone=\count348
+\xint_c_xii_e_viii=\count349
+\xint_c_xi_e_viii_mone=\count350
+)
+Package: xint 2022/06/10 v1.4m Expandable operations on big integers (JFB)
+\xint_c_nine_x^viii=\count351
+)
+Package: xintfrac 2022/06/10 v1.4m Expandable operations on fractions (JFB)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xint/xinttools.sty
+Package: xinttools 2022/06/10 v1.4m Expandable and non-expandable utilities (JF
+B)
+\XINT_toks=\toks48
+)
+Package: xintexpr 2022/06/10 v1.4m Expandable expression parser (JFB)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xint/xinttrig.sty
+Package: xinttrig 2022/06/10 v1.4m Trigonometrical functions for xintexpr (JFB)
+
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xint/xintlog.sty
+Package: xintlog 2022/06/10 v1.4m Logarithms and exponentials for xintexpr (JFB
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/poormanlog/poormanlog.sty
+Package: poormanlog 2022/05/25 v0.07 base 10 log and pow with 9 digits (JFB)
+
+(/usr/share/texlive/texmf-dist/tex/generic/poormanlog/poormanlog.tex))))
+(/usr/share/texlive/texmf-dist/tex/generic/xint/xintbinhex.sty
+Package: xintbinhex 2022/06/10 v1.4m Expandable binary and hexadecimal conversi
+ons (JFB)
+\xint_c_ii^xv=\count352
+\xint_c_ii^xvi=\count353
+)
+(/usr/share/texlive/texmf-dist/tex/generic/randomlist/randomlist.sty
+Package: randomlist 2017/09/11 v1.3 Package for random list (JCC, CT)
+
+(/usr/share/texlive/texmf-dist/tex/generic/randomlist/randomlist.tex
+\RL@random=\count354
+\RL@random@a=\count355
+\RL@random@b=\count356
+\@ListOfList=\toks49
+\RL@counti=\count357
+\RL@countii=\count358
+\RL@countiii=\count359
+\RL@hdle=\read4
+))
+(/usr/share/texlive/texmf-dist/tex/generic/simplekv/simplekv.sty
+(/usr/share/texlive/texmf-dist/tex/generic/simplekv/simplekv.tex)
+Package: simplekv 2022/10/01 v0.2a Simple keyval package (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_cnt_foreach_nest=\count360
+\loi_nestcnt=\count361
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
+sep char (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tabularray/tabularray.sty
+Package: tabularray 2023-03-01 v2023A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count362
+\l__tblr_c_int=\count363
+\l__tblr_r_int=\count364
+\l__tblr_d_dim=\dimen345
+\l__tblr_h_dim=\dimen346
+\l__tblr_o_dim=\dimen347
+\l__tblr_p_dim=\dimen348
+\l__tblr_q_dim=\dimen349
+\l__tblr_r_dim=\dimen350
+\l__tblr_s_dim=\dimen351
+\l__tblr_t_dim=\dimen352
+\l__tblr_v_dim=\dimen353
+\l__tblr_w_dim=\dimen354
+\l__tblr_a_box=\box132
+\l__tblr_b_box=\box133
+\l__tblr_c_box=\box134
+\l__tblr_d_box=\box135
+\g__tblr_table_count_int=\count365
+\c@rownum=\count366
+\c@colnum=\count367
+\c@rowcount=\count368
+\c@colcount=\count369
+\abovesep=\dimen355
+\belowsep=\dimen356
+\leftsep=\dimen357
+\rightsep=\dimen358
+\g_tblr_level_int=\count370
+\g__tblr_data_row_key_count_int=\count371
+\g__tblr_data_column_key_count_int=\count372
+\g__tblr_data_cell_key_count_int=\count373
+\g__tblr_array_int=\count374
+\l__tblr_key_count_int=\count375
+\l__tblr_key_quotient_int=\count376
+\l__tblr_key_quotient_two_int=\count377
+\l__tblr_key_remainder_int=\count378
+\g__tblr_data_str_value_count_int=\count379
+\rulewidth=\dimen359
+\l__tblr_strut_dp_dim=\dimen360
+\l__tblr_strut_ht_dim=\dimen361
+\g__tblr_cell_wd_dim=\dimen362
+\g__tblr_cell_ht_dim=\dimen363
+\g__tblr_cell_head_dim=\dimen364
+\g__tblr_cell_foot_dim=\dimen365
+\l__column_target_dim=\dimen366
+\l__tblr_caption_box=\box136
+\l__tblr_caption_left_box=\box137
+\l__tblr_row_head_box=\box138
+\l__tblr_row_foot_box=\box139
+\l__tblr_row_head_foot_dim=\dimen367
+\tablewidth=\dimen368
+\l__tblr_table_firsthead_box=\box140
+\l__tblr_table_middlehead_box=\box141
+\l__tblr_table_lasthead_box=\box142
+\l__tblr_table_firstfoot_box=\box143
+\l__tblr_table_middlefoot_box=\box144
+\l__tblr_table_lastfoot_box=\box145
+\l__tblr_remain_height_dim=\dimen369
+\l__tblr_long_from_int=\count380
+\l__tblr_long_to_int=\count381
+\l__tblr_curr_i_int=\count382
+\l__tblr_prev_i_int=\count383
+\l__tblr_table_page_int=\count384
+\l__tblr_table_head_box=\box146
+\l__tblr_table_foot_box=\box147
+\l__tblr_table_head_foot_dim=\dimen370
+\l__tblr_table_head_body_foot_dim=\dimen371
+\l__tblr_table_box=\box148
+\l__tblr_table_hlines_box=\box149
+\l__tblr_hline_box=\box150
+\l__tblr_row_box=\box151
+\l__tblr_col_o_wd_dim=\dimen372
+\l__tblr_col_b_wd_dim=\dimen373
+\l__tblr_hline_leftskip_dim=\dimen374
+\l__tblr_hline_rightskip_dim=\dimen375
+\l__tblr_row_ht_dim=\dimen376
+\l__tblr_row_dp_dim=\dimen377
+\l__tblr_row_abovesep_dim=\dimen378
+\l__tblr_row_belowsep_dim=\dimen379
+\l__tblr_row_vlines_box=\box152
+\l__tblr_vline_box=\box153
+\l__tblr_cell_box=\box154
+\l__row_upper_dim=\dimen380
+\l__row_lower_dim=\dimen381
+\l__row_vpace_dim=\dimen382
+\l__tblr_vline_aboveskip_dim=\dimen383
+\l__tblr_vline_belowskip_dim=\dimen384
+\l__tblr_cell_wd_dim=\dimen385
+\l__tblr_cell_ht_dim=\dimen386
+\l__tblr_diag_box=\box155
+)
+(/usr/share/texlive/texmf-dist/tex/generic/hologo/hologo.sty
+Package: hologo 2021-11-16 v1.15 A logo collection with bookmark support (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2023/01/19 4.5a verbatim text (tvz,hv)
+\FV@CodeLineNo=\count385
+\FV@InFile=\read5
+\FV@TabBox=\box156
+\c@FancyVerbLine=\count386
+\FV@StepNumber=\count387
+\FV@OutFile=\write5
+)
+(/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip80
+\L@UnitsRaiseTextstyle=\skip81
+\L@UnitsRaiseScriptstyle=\skip82
+)
+(/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2023-03-14 v3.2.3 A comprehensive (SI) units package
+\l__siunitx_angle_tmp_dim=\dimen387
+\l__siunitx_angle_marker_box=\box157
+\l__siunitx_angle_unit_box=\box158
+\l__siunitx_compound_count_int=\count388
+
+(/usr/share/texlive/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+)
+\l__siunitx_number_exponent_fixed_int=\count389
+\l__siunitx_number_min_decimal_int=\count390
+\l__siunitx_number_min_integer_int=\count391
+\l__siunitx_number_round_precision_int=\count392
+\l__siunitx_number_lower_threshold_int=\count393
+\l__siunitx_number_upper_threshold_int=\count394
+\l__siunitx_number_group_first_int=\count395
+\l__siunitx_number_group_size_int=\count396
+\l__siunitx_number_group_minimum_int=\count397
+\l__siunitx_table_tmp_box=\box159
+\l__siunitx_table_tmp_dim=\dimen388
+\l__siunitx_table_column_width_dim=\dimen389
+\l__siunitx_table_integer_box=\box160
+\l__siunitx_table_decimal_box=\box161
+\l__siunitx_table_uncert_box=\box162
+\l__siunitx_table_before_box=\box163
+\l__siunitx_table_after_box=\box164
+\l__siunitx_table_before_dim=\dimen390
+\l__siunitx_table_carry_dim=\dimen391
+\l__siunitx_unit_tmp_int=\count398
+\l__siunitx_unit_position_int=\count399
+\l__siunitx_unit_total_int=\count400
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
+Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-help
+er.sty
+Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fon
+tawesome5
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarybabel.code.tex
+File: tikzlibrarybabel.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:81: LaTeX Error
+: Option clash for package tcolorbox.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 \RequirePackage
+                    {iftex}
+The package tcolorbox has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [most]
+Adding the global options:
+  ,most
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:112: Undefined 
+control sequence.
+l.112 \NewTCBListing
+                    {PresentationCode}{ O{ForestGreen} m }{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:112: LaTeX Erro
+r: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 \NewTCBListing{P
+                      resentationCode}{ O{ForestGreen} m }{%
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:114: You can't 
+use `macro parameter character #' in horizontal mode.
+l.114 	colback=#
+                1!5!white,colframe=#1!75!black,colbacklower=White,%
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:114: You can't 
+use `macro parameter character #' in horizontal mode.
+l.114 	colback=#1!5!white,colframe=#
+                                    1!75!black,colbacklower=White,%
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:115: Undefined 
+control sequence.
+l.115 ...to top right={yshift=-\tcboxedtitleheight
+                                                  },title=Code \LaTeX,%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 115
+.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 115
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 11
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:117: You can't 
+use `macro parameter character #' in horizontal mode.
+l.117 		colframe=#
+                  1!75!black,colback=#1!15!white,%
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:117: You can't 
+use `macro parameter character #' in horizontal mode.
+l.117 		colframe=#1!75!black,colback=#
+                                      1!15!white,%
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:120: Illegal pa
+rameter number in definition of \XC@@tmp.
+<to be read again> 
+                   1
+l.120 	fonttitle=\color{#1!90!black}
+                                    \itshape\ttfamily\footnotesize,%
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:120: Package xc
+olor Error: Undefined color `##1'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 	fonttitle=\color{#1!90!black}
+                                    \itshape\ttfamily\footnotesize,%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+20.
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:120: Undefined 
+control sequence.
+l.120 ...1!90!black}\itshape\ttfamily\footnotesize
+                                                  ,%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:122: Undefined 
+control sequence.
+l.122 		style=tcblatex,basicstyle=\footnotesize
+                                               \ttfamily,%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/b/it' undefined
+(Font)              using `T1/cmtt/bx/it' instead on input line 123.
+
+LaTeX Font Info:    Font shape `T1/cmtt/bx/it' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/it' tried instead on input line 123.
+
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:123: Package xc
+olor Error: Undefined color `Blue'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 		keywordstyle=\bfseries\color{Blue}
+                                          ,tabsize=2,%
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+/usr/share/texlive/texmf-dist/tex/latex/proflycee/ProfLycee.sty:125: You can't 
+use `macro parameter character #' in horizontal mode.
+l.125 	#
+        2
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (97.42554pt too wide) in paragraph at lines 112--127
+[]\T1/cmr/m/n/10 PresentationCode
+ []
+
+
+Overfull \hbox (60.86014pt too wide) in paragraph at lines 112--127
+\T1/cmr/m/n/10 OForest-Green
+ []
+
+
+Overfull \hbox (8.3313pt too wide) in paragraph at lines 112--127
+\T1/cmr/m/n/10 m
+ []
+
+
+Overfull \hbox (23.96637pt too wide) in paragraph at lines 112--127
+\T1/cmr/m/n/10 sharp
+ []
+
+
+Overfull \hbox (515.9851pt too wide) in paragraph at lines 112--127
+\T1/cmr/m/n/10 cor-ners=downhill,enhanced,arc=12pt,skin=bicolor,colback=1!5!whi
+te,colframe=1!75!black,colbacklower=White,attach
+ []
+
+
+Overfull \hbox (25.82703pt too wide) in paragraph at lines 112--127
+\T1/cmr/m/n/10 boxed
+ []
+
+
+Overfull \hbox (17.77344pt too wide) in paragraph at lines 112--127
+\T1/cmr/m/n/10 ti-tle
+ []
+
+
+Overfull \hbox (8.88672pt too wide) in paragraph at lines 112--127
+\T1/cmr/m/n/10 to
+ []
+
+
+Overfull \hbox (14.44092pt too wide) in paragraph at lines 112--127
+\T1/cmr/m/n/10 top
+ []
+
+
+Overfull \hbox (115.05524pt too wide) in paragraph at lines 112--127
+\T1/cmr/m/n/10 right=yshift=-,title=Code
+ []
+
+
+Overfull \hbox (53.41412pt too wide) in paragraph at lines 112--127
+\T1/cmr/m/n/10 L[]T[]X,boxed
+ []
+
+
+Overfull \hbox (17.77344pt too wide) in paragraph at lines 112--127
+\T1/cmr/m/n/10 ti-tle
+ []
+
+
+Overfull \hbox (230.38818pt too wide) in paragraph at lines 112--127
+\T1/cmr/m/n/10 style=colframe=1!75!black,colback=1!15!white,,sharp
+ []
+
+
+Overfull \hbox (209.5877pt too wide) in paragraph at lines 112--127
+\T1/cmr/m/n/10 cor-ners=downhill,arc=12pt,,fonttitle=[]\T1/cmtt/m/it/10 ,listin
+g
+ []
+
+
+Overfull \hbox (320.17181pt too wide) in paragraph at lines 112--127
+\T1/cmtt/m/it/10 options=style=tcblatex,basicstyle=,keywordstyle=[],tabsize=2,[
+],2
+ []
+
+\c@CFnum=\count401
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.0.3'
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.0.3'
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count402
+\lst@gtempboxa=\box165
+\lst@token=\toks50
+\lst@length=\count403
+\lst@currlwidth=\dimen392
+\lst@column=\count404
+\lst@pos=\count405
+\lst@lostspace=\dimen393
+\lst@width=\dimen394
+\lst@newlines=\count406
+\lst@lineno=\count407
+\abovecaptionskip=\skip83
+\belowcaptionskip=\skip84
+\lst@maxwidth=\dimen395
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count408
+\lst@skipnumbers=\count409
+\lst@framebox=\box166
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.0.3'
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.0.3'
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+))
+\c@tcblisting=\count410
+))
+(/usr/share/texlive/texmf-dist/tex/latex/listingsutf8/listingsutf8.sty
+Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+))))
+\CompteurSeuil=\count411
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen396
+\ESO@tempdimb=\dimen397
+)
+\AM@pagewidth=\dimen398
+\AM@pageheight=\dimen399
+\AM@fboxrule=\dimen400
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count412
+\AM@pagebox=\box167
+\AM@global@opts=\toks51
+\AM@pagecnt=\count413
+\AM@toc@title=\toks52
+\AM@lof@heading=\toks53
+\c@AM@survey=\count414
+\AM@templatesizebox=\box168
+)
+\c@exercice=\count415
+\c@exercicedevoir=\count416
+\c@definition=\count417
+\c@exemple=\count418
+\c@theoreme=\count419
+\c@propriete=\count420
+\c@lemme=\count421
+\c@remarque=\count422
+\c@demonstration=\count423
+\c@enui=\count424
+\enitdp@enu=\count425
+
+
+./mathdoc.sty:509: LaTeX Error: Command \maketitle undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.509 \renewcommand{\maketitle}
+                               {
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\l_my_year_int=\count426
+\l_my_previous_year_int=\count427
+\l_my_next_year_int=\count428
+\l_my_month_int=\count429
+)
+! Emergency stop.
+<*> mathdoc.sty
+               
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 47039 strings out of 476041
+ 986370 string characters out of 5793173
+ 1851388 words of memory out of 6000000
+ 66736 multiletter control sequences out of 15000+600000
+ 533550 words of font info for 76 fonts, out of 8000000 for 9000
+ 1137 hyphenation exceptions out of 8191
+ 103i,4n,104p,2757b,261s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
